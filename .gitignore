@@ -3,8 +3,8 @@ __pycache__/
 build/
 dist/
 imagesBU/
-images_chris/
-images_marco/
+images_chris/*
+images_marco/*
 statistics/*
 !statistics/.gitkeep 
 images/*
