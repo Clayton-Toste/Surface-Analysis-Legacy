@@ -11,7 +11,7 @@ images/*
 !images/.gitkeep 
 proteins/*
 !proteins/.gitkeep 
-logs/*.
+logs/*
 !logs/.gitkeep 
 Surface_Analysis.egg-info/
 BU_surface_Analysis.py
