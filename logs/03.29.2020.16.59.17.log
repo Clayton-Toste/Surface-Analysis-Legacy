@@ -1,9 +1,0 @@
-16:59:17 -- 0:00:00.000576: Initialization complete, beginning processing of proteins with codes: '1cf3', '2hrw'.
-16:59:17 -- 0:00:00.001678: Skipped fetching of model for protein with code: '1cf3' because protein's model as already been fetched.
-16:59:17 -- 0:00:00.002056: Beginning surface analysis.
-16:59:17 -- 0:00:00.002377: Started protein with code: '1cf3'.
-16:59:19 -- 0:00:01.424981: File read.
-16:59:24 -- 0:00:06.788511: 160 patches built, 68 deleted due to small size.
-17:09:25 -- 0:10:08.162716: Distances built(Patches).
-17:09:25 -- 0:10:08.164637: Surfaces built.
-17:09:32 -- 0:10:14.661744: Centers built.

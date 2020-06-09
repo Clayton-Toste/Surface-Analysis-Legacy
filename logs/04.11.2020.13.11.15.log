@@ -1,5 +1,0 @@
-13:11:15 -- 0:00:00.000794 -- Main: Initialization complete, beginning processing of proteins with codes: '1l2y' with graphing arguments: 'touching_outer'.
-13:11:15 -- 0:00:00.002505 -- Main: Skipped fetching of model for protein with code: '1l2y' because protein's model as already been fetched.
-13:11:15 -- 0:00:00.003365 -- Main: Beginning surface analysis.
-13:11:15 -- 0:00:00.004051 -- Main: Skipping surface analysis for protein with code: '1l2y', because it has already been processed.
-13:11:15 -- 0:00:00.004731 -- Main: Surface analysis complete. Beginning graphing.

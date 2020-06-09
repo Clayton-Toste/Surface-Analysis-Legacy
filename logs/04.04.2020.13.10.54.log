@@ -1,5 +1,0 @@
-13:10:54 -- 0:00:00.000477 -- Main: Initialization complete, beginning processing of proteins with codes: '1yph' with graphing arguments: 'distances_outer'.
-13:10:54 -- 0:00:00.002099 -- Main: Skipped fetching of model for protein with code: '1yph' because protein's model as already been fetched.
-13:10:54 -- 0:00:00.002972 -- Main: Beginning surface analysis.
-13:10:54 -- 0:00:00.003576 -- Main: Skipping surface analysis for protein with code: '1yph', because it has already been processed.
-13:10:54 -- 0:00:00.004302 -- Main: Surface analysis complete. Beginning graphing.

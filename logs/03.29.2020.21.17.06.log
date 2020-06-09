@@ -1,7 +1,0 @@
-21:17:06 -- 0:00:00.000672: Initialization complete, beginning processing of proteins with codes: '1kzm'.
-21:17:06 -- 0:00:00.001346: Fetching model for protein with code: '1kzm'.
-21:17:07 -- 0:00:01.117615: Successfully fetched model for protein with code: '1kzm'.
-21:17:07 -- 0:00:01.118546: Beginning surface analysis.
-21:17:07 -- 0:00:01.119057: Started protein with code: '1kzm'.
-21:17:07 -- 0:00:01.839927: File read.
-21:17:09 -- 0:00:03.533021: 86 patches built, 41 deleted due to small size.

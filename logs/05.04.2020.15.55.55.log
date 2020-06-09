@@ -1,5 +1,0 @@
-15:55:55 -- 0:00:00.000553 -- Main: Initialization complete, beginning processing of proteins with codes: 'covi'.
-15:55:55 -- 0:00:00.001288 -- covi: Skipped fetching of model for protein.
-15:55:55 -- 0:00:00.001657 -- Main: Beginning surface analysis.
-15:55:55 -- 0:00:00.002211 -- covi: Started protein.
-15:55:56 -- 0:00:00.896579 -- covi: File read.

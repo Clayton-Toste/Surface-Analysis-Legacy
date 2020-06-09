@@ -1,5 +1,0 @@
-13:53:44 -- 0:00:00.000648 -- Main: Initialization complete, beginning processing of proteins with codes: 'testcopy'.
-13:53:44 -- 0:00:00.001273 -- testcopy: Skipping fetching of model for protein.
-13:53:44 -- 0:00:00.002093 -- Main: Beginning surface analysis.
-13:53:44 -- 0:00:00.003088 -- testcopy: Skipping surface analysis for protein because it has already been processed.
-13:53:44 -- 0:00:00.004623 -- Main: Surface analysis complete. Beginning graphing.

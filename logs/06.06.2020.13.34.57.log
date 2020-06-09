@@ -1,5 +1,0 @@
-13:34:57 -- 0:00:00.000596 -- Main: Initialization complete, beginning processing of proteins with codes: '1yph' with graphing arguments: 'stats', 'save', 'sizes_outer'.
-13:34:57 -- 0:00:00.000957 -- 1yph: Skipping fetching of model for protein.
-13:34:57 -- 0:00:00.001069 -- Main: Beginning surface analysis.
-13:34:57 -- 0:00:00.001283 -- 1yph: Skipping surface analysis for protein because it has already been processed.
-13:34:57 -- 0:00:00.001378 -- Main: Surface analysis complete. Beginning graphing.

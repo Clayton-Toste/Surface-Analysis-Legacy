@@ -1,9 +1,0 @@
-13:04:09 -- 0:00:00.000704 -- Main: Initialization complete, beginning processing of proteins with codes: '1l2y'.
-13:04:09 -- 0:00:00.001243 -- Main: Skipped fetching of model for protein with code: '1l2y' because protein's model as already been fetched.
-13:04:09 -- 0:00:00.001858 -- Main: Beginning surface analysis.
-13:04:09 -- 0:00:00.002501 -- 1l2y: Started protein.
-13:04:09 -- 0:00:00.093719 -- 1l2y: File read.
-13:04:09 -- 0:00:00.129096 -- 1l2y: 9 patches built, 1 deleted due to small size.
-13:04:10 -- 0:00:01.056347 -- 1l2y: Distances built(Patches).
-13:04:10 -- 0:00:01.057140 -- 1l2y: Surfaces built.
-13:04:10 -- 0:00:01.075823 -- 1l2y: Centers built.

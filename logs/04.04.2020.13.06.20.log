@@ -1,7 +1,0 @@
-13:06:20 -- 0:00:00.000496 -- Main: Initialization complete, beginning processing of proteins with codes: '1cf3' with graphing arguments: 'distances_outer'.
-13:06:20 -- 0:00:00.001874 -- Main: Skipped fetching of model for protein with code: '1cf3' because protein's model as already been fetched.
-13:06:20 -- 0:00:00.002636 -- Main: Beginning surface analysis.
-13:06:20 -- 0:00:00.003276 -- 1cf3: Started protein.
-13:06:22 -- 0:00:01.389309 -- 1cf3: File read.
-13:06:27 -- 0:00:06.743717 -- 1cf3: 160 patches built, 68 deleted due to small size.
-13:15:53 -- 0:09:32.862478 -- 1cf3: Distances built(Patches).

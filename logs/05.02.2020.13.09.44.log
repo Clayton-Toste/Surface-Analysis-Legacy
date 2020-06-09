@@ -1,6 +1,0 @@
-13:09:44 -- 0:00:00.000522 -- Main: Initialization complete, beginning processing of proteins with codes: '1yph' with graphing arguments: 'distances_outer'.
-13:09:44 -- 0:00:00.002199 -- 1yph: Skipped fetching of model for protein.
-13:09:44 -- 0:00:00.003132 -- Main: Beginning surface analysis.
-13:09:44 -- 0:00:00.003739 -- 1yph: Started protein.
-13:09:45 -- 0:00:01.159891 -- 1yph: File read.
-13:09:48 -- 0:00:04.544883 -- 1yph: 130 patches built, 91 deleted due to small size.

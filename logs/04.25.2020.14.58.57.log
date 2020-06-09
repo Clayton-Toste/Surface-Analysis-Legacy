@@ -1,7 +1,0 @@
-14:58:57 -- 0:00:00.000468 -- Main: Initialization complete, beginning processing of proteins with codes: '1yph' with graphing arguments: 'sizes_outer'.
-14:58:57 -- 0:00:00.001765 -- 1yph: Fetching model.
-14:58:58 -- 0:00:01.622051 -- 1yph: Successfully fetched model.
-14:58:58 -- 0:00:01.622834 -- Main: Beginning surface analysis.
-14:58:58 -- 0:00:01.623346 -- 1yph: Started protein.
-14:58:59 -- 0:00:02.635009 -- 1yph: File read.
-14:59:02 -- 0:00:05.452816 -- 1yph: 130 patches built, 91 deleted due to small size.

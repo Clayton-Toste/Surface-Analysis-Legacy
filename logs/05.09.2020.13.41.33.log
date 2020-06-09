@@ -1,4 +1,0 @@
-13:41:33 -- 0:00:00.000650 -- Main: Initialization complete, beginning processing of proteins with codes: ('1urq', PosixPath('C:/Users/clayt/Documents/Proteins/Snare/1urq.pdb')).
-13:41:33 -- 0:00:00.001375 -- 1urq: Fetching model.
-13:41:34 -- 0:00:01.134503 -- 1urq: Successfully fetched model.
-13:41:34 -- 0:00:01.135438 -- Main: Beginning surface analysis.

@@ -1,6 +1,0 @@
-20:11:02 -- 0:00:00.000539: Initialization complete, beginning processing of proteins with codes: '1yph', '2hrw', '1cf3'.
-20:11:02 -- 0:00:00.001261: Skipped fetching of model for protein with code: '1yph' because protein's model as already been fetched.
-20:11:02 -- 0:00:00.001580: Beginning surface analysis.
-20:11:02 -- 0:00:00.001930: Started protein with code: '1yph'.
-20:11:03 -- 0:00:01.030107: File read.
-20:11:06 -- 0:00:04.580716: 114 patches built, 83 deleted due to small size.
