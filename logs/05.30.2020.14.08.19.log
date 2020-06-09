@@ -1,0 +1,5 @@
+14:08:19 -- 0:00:00.000538 -- Main: Initialization complete, beginning processing of proteins with codes: '1cf3' with graphing arguments: 'sizes_outer', 'allowOutliers', 'show'.
+14:08:19 -- 0:00:00.001723 -- 1cf3: Skipping fetching of model for protein.
+14:08:19 -- 0:00:00.002141 -- Main: Beginning surface analysis.
+14:08:19 -- 0:00:00.003407 -- 1cf3: Skipping surface analysis for protein because it has already been processed.
+14:08:19 -- 0:00:00.003802 -- Main: Surface analysis complete. Beginning graphing.

@@ -1,0 +1,13 @@
+14:53:52 -- 0:00:00.000499 -- Main: Initialization complete, beginning processing of proteins with codes: '1h55' with graphing arguments: 'distances_outer'.
+14:53:52 -- 0:00:00.001782 -- 1h55: Fetching model.
+14:53:53 -- 0:00:01.072918 -- 1h55: Successfully fetched model.
+14:53:53 -- 0:00:01.073778 -- Main: Beginning surface analysis.
+14:53:53 -- 0:00:01.074311 -- 1h55: Started protein.
+14:53:53 -- 0:00:01.758058 -- 1h55: File read.
+14:53:55 -- 0:00:03.560827 -- 1h55: 80 patches built, 50 deleted due to small size.
+14:54:36 -- 0:00:44.850056 -- 1h55: Distances built(Patches).
+14:54:36 -- 0:00:44.850735 -- 1h55: 3 surfaces built.
+14:54:37 -- 0:00:45.454893 -- 1h55: Centers built.
+14:54:55 -- 0:01:03.666428 -- 1h55: Distances built(Universal).
+14:54:55 -- 0:01:03.817354 -- 1h55: Finished protein.
+14:54:55 -- 0:01:03.889488 -- Main: Surface analysis complete. Beginning graphing.

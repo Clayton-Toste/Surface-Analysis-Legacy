@@ -1,0 +1,10 @@
+11:08:23 -- 0:00:00.000482 -- Main: Initialization complete, beginning processing of proteins with codes: '5qd0'.
+11:08:23 -- 0:00:00.001271 -- 5qd0: Fetching model.
+11:08:27 -- 0:00:03.787672 -- 5qd0: Successfully fetched model.
+11:08:27 -- 0:00:03.788453 -- Main: Beginning surface analysis.
+11:08:27 -- 0:00:03.788745 -- 5qd0: Started protein.
+11:08:30 -- 0:00:06.427601 -- 5qd0: File read.
+11:08:50 -- 0:00:26.562845 -- 5qd0: 391 patches built, 214 deleted due to small size.
+11:09:47 -- 0:01:23.833215 -- 5qd0: Distances built(Patches).
+11:09:47 -- 0:01:23.834127 -- 5qd0: 22 surfaces built.
+11:09:48 -- 0:01:25.032120 -- 5qd0: Centers built.

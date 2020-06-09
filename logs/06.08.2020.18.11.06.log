@@ -1,0 +1,12 @@
+18:11:06 -- 0:00:00.000492 -- Main: Initialization complete, beginning processing of proteins with codes: 'testcopy' with graphing arguments: 'use_radius', 'sizes_outer', 'show'.
+18:11:06 -- 0:00:00.002097 -- Main: Beginning surface analysis.
+18:11:06 -- 0:00:00.002784 -- testcopy: Started protein.
+18:11:06 -- 0:00:00.014130 -- testcopy: File read.
+18:11:06 -- 0:00:00.015823 -- testcopy: 3 patches built, 1 deleted due to small size.
+18:11:06 -- 0:00:00.029987 -- testcopy: Distances built(Patches).
+18:11:06 -- 0:00:00.030509 -- testcopy: 1 surfaces built.
+18:11:06 -- 0:00:00.031473 -- testcopy: Centers built.
+18:11:06 -- 0:00:00.033245 -- testcopy: Distances built(Universal).
+18:11:06 -- 0:00:00.039048 -- testcopy: Finished protein.
+18:11:06 -- 0:00:00.039391 -- Main: Surface analysis complete. Beginning graphing.
+18:11:27 -- 0:00:20.970632 -- Main: Finished graphing.

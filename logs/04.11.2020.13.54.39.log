@@ -1,0 +1,4 @@
+13:54:39 -- 0:00:00.000651 -- Main: Initialization complete, beginning processing of proteins with codes: '1cf3' with graphing arguments: 'distances_outer'.
+13:54:39 -- 0:00:00.002136 -- Main: Skipped fetching of model for protein with code: '1cf3' because protein's model as already been fetched.
+13:54:39 -- 0:00:00.002635 -- Main: Beginning surface analysis.
+13:54:39 -- 0:00:00.003135 -- 1cf3: Started protein.

@@ -1,0 +1,34 @@
+15:28:51 -- 0:00:00.001092 -- Main: Initialization complete, beginning processing of proteins with codes: '1mbn', '1hch', '1mbo' with graphing arguments: 'log_scale', 'sizes_outer', 'use_radius', 'distances_outer'.
+15:28:51 -- 0:00:00.002278 -- 1mbn: Building model.
+15:28:52 -- 0:00:01.521692 -- 1mbn: Successfully built model.
+15:28:52 -- 0:00:01.523088 -- 1hch: Building model.
+15:28:53 -- 0:00:02.896388 -- 1hch: Successfully built model.
+15:28:53 -- 0:00:02.897382 -- 1mbo: Building model.
+15:28:54 -- 0:00:03.780513 -- 1mbo: Successfully built model.
+15:28:54 -- 0:00:03.781353 -- Main: Beginning surface analysis.
+15:28:54 -- 0:00:03.781874 -- 1mbn: Started analizing protein.
+15:28:55 -- 0:00:04.214790 -- 1mbn: Protein model imported from pymol.
+15:28:55 -- 0:00:04.908347 -- 1mbn: 63 patches built, 12 deleted due to small size.
+15:29:05 -- 0:00:14.152246 -- 1mbn: Internal patch distances calculated.
+15:29:05 -- 0:00:14.152908 -- 1mbn: 3 surfaces built.
+15:29:05 -- 0:00:14.272286 -- 1mbn: Patch centers found.
+15:29:12 -- 0:00:21.758695 -- 1mbn: Distances between patches calculated.
+15:29:12 -- 0:00:21.876776 -- 1mbn: Finished analizing protein.
+15:29:12 -- 0:00:21.915710 -- 1hch: Started analizing protein.
+15:29:13 -- 0:00:22.610552 -- 1hch: Protein model imported from pymol.
+15:29:15 -- 0:00:24.291291 -- 1hch: 78 patches built, 46 deleted due to small size.
+15:30:19 -- 0:01:28.037054 -- 1hch: Internal patch distances calculated.
+15:30:19 -- 0:01:28.038180 -- 1hch: 3 surfaces built.
+15:30:20 -- 0:01:29.541750 -- 1hch: Patch centers found.
+15:30:48 -- 0:01:57.463142 -- 1hch: Distances between patches calculated.
+15:30:48 -- 0:01:57.644899 -- 1hch: Finished analizing protein.
+15:30:48 -- 0:01:57.735653 -- 1mbo: Started analizing protein.
+15:30:49 -- 0:01:58.191797 -- 1mbo: Protein model imported from pymol.
+15:30:49 -- 0:01:58.935055 -- 1mbo: 62 patches built, 20 deleted due to small size.
+15:30:58 -- 0:02:07.464395 -- 1mbo: Internal patch distances calculated.
+15:30:58 -- 0:02:07.465507 -- 1mbo: 2 surfaces built.
+15:30:58 -- 0:02:07.643357 -- 1mbo: Patch centers found.
+15:31:14 -- 0:02:23.950451 -- 1mbo: Distances between patches calculated.
+15:31:15 -- 0:02:24.119587 -- 1mbo: Finished analizing protein.
+15:31:15 -- 0:02:24.190542 -- Main: Surface analysis complete. Beginning graphing.
+15:31:19 -- 0:02:28.712852 -- Main: Finished graphing.

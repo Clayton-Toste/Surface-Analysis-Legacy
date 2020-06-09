@@ -1,0 +1,5 @@
+23:58:32 -- 0:00:00.000562: Initialization complete, beginning processing of proteins with codes: '1kzm', '1l2y' with graphing arguments: 'sdj', 'sfjk'.
+23:58:32 -- 0:00:00.001155: Fetching model for protein with code: '1kzm'.
+23:58:33 -- 0:00:01.253977: Fetching model for protein with code: '1l2y'.
+23:58:36 -- 0:00:03.939859: Beginning surface analysis.
+23:58:36 -- 0:00:03.940950: Surface analysis complete. Beginning graphing.

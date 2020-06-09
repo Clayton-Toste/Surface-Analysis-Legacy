@@ -1,0 +1,5 @@
+17:23:43 -- 0:00:00.000748: Initialization complete, beginning processing of proteins with codes: '1h55' with graphing arguments: 'touching_outer'.
+17:23:43 -- 0:00:00.001727: Skipped fetching of model for protein with code: '1h55' because protein's model as already been fetched.
+17:23:43 -- 0:00:00.001998: Beginning surface analysis.
+17:23:43 -- 0:00:00.002318: Skipping surface analysis for protein with code: '1h55', because it has already been processed.
+17:23:43 -- 0:00:00.002559: Surface analysis complete. Beginning graphing.

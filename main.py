@@ -74,13 +74,13 @@ def analyze(quiet: bool=False, reset: bool=False, multiprocess: bool=False, pymo
 		if not path.isfile('.file'):
 			try:
 				end = time()
-				logger.debug('Building model.', extra={'offset': timedelta(seconds=end-start), 'code': protein})
+				logger.debug('Building model in PyMOL.', extra={'offset': timedelta(seconds=end-start), 'code': protein})
 				if file:
 					copyfile(file, file.name)
 					open(".file", 'w').close()
 				subprocess.call(['../../PyMOL/python.exe', '../../fetch.py', file.name if path.isfile('.file') else protein, str(not path.isfile('.file'))], stdout=subprocess.PIPE)
 				end = time()
-				logger.debug('Successfully built model.', extra={'offset': timedelta(seconds=end-start), 'code': protein})
+				logger.debug('Successfully exported model from PyMOL.', extra={'offset': timedelta(seconds=end-start), 'code': protein})
 			except:
 				raise SystemError('Could not run fetch script.')
 		chdir('..')

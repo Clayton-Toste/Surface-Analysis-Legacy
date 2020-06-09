@@ -1,0 +1,8 @@
+11:17:52 -- 0:00:00.000485 -- Main: Initialization complete, beginning processing of proteins with codes: '1h55', '2hrw', '1cf3', '1yph' with graphing arguments: 'use_radius', 'touching_outer', 'distances_outer', 'touching_inner', 'sizes_inner', 'sizes_outer', 'distances_inner', 'save', 'stats'.
+11:17:52 -- 0:00:00.001008 -- 1h55: Skipping fetching of model for protein.
+11:17:52 -- 0:00:00.002430 -- Main: Beginning surface analysis.
+11:17:52 -- 0:00:00.004833 -- 1h55: Skipping surface analysis for protein because it has already been processed.
+11:17:52 -- 0:00:00.005324 -- 2hrw: Skipping surface analysis for protein because it has already been processed.
+11:17:52 -- 0:00:00.006558 -- 1cf3: Skipping surface analysis for protein because it has already been processed.
+11:17:52 -- 0:00:00.007123 -- 1yph: Skipping surface analysis for protein because it has already been processed.
+11:17:52 -- 0:00:00.007953 -- Main: Surface analysis complete. Beginning graphing.

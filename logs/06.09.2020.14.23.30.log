@@ -1,0 +1,30 @@
+14:23:30 -- 0:00:00.000551 -- Main: Initialization complete, beginning processing of proteins with codes: '3lip', '1tca', '1hzy' with graphing arguments: 'save', 'distances_outer', 'log_scale', 'sizes_outer', 'use_radius'.
+14:23:30 -- 0:00:00.002081 -- 3lip: Building model.
+14:23:32 -- 0:00:01.425915 -- 3lip: Successfully built model.
+14:23:32 -- 0:00:01.427187 -- 1tca: Skipping fetching of model for protein.
+14:23:32 -- 0:00:01.427588 -- Main: Beginning surface analysis.
+14:23:32 -- 0:00:01.428097 -- 3lip: Started analizing protein.
+14:23:33 -- 0:00:02.400493 -- 3lip: Protein model imported from pymol.
+14:23:35 -- 0:00:04.187384 -- 3lip: 80 patches built, 57 deleted due to small size.
+14:24:28 -- 0:00:57.406601 -- 3lip: Internal patch distances calculated.
+14:24:28 -- 0:00:57.407236 -- 3lip: 7 surfaces built.
+14:24:28 -- 0:00:57.972856 -- 3lip: Patch centers found.
+14:24:46 -- 0:01:15.781622 -- 3lip: Distances between patches calculated.
+14:25:31 -- 0:02:00.586422 -- 3lip: Finished analizing protein.
+14:25:31 -- 0:02:00.657893 -- 1tca: Started analizing protein.
+14:25:32 -- 0:02:01.262815 -- 1tca: Protein model imported from pymol.
+14:25:33 -- 0:02:02.671526 -- 1tca: 63 patches built, 59 deleted due to small size.
+14:26:08 -- 0:02:37.107548 -- 1tca: Internal patch distances calculated.
+14:26:08 -- 0:02:37.108178 -- 1tca: 3 surfaces built.
+14:26:08 -- 0:02:37.583677 -- 1tca: Patch centers found.
+14:26:22 -- 0:02:51.719672 -- 1tca: Distances between patches calculated.
+14:26:22 -- 0:02:51.869742 -- 1tca: Finished analizing protein.
+14:26:22 -- 0:02:51.924449 -- 1hzy: Started analizing protein.
+14:26:24 -- 0:02:53.484746 -- 1hzy: Protein model imported from pymol.
+14:26:29 -- 0:02:58.768652 -- 1hzy: 191 patches built, 79 deleted due to small size.
+14:26:54 -- 0:03:23.953736 -- 1hzy: Internal patch distances calculated.
+14:26:54 -- 0:03:23.954510 -- 1hzy: 11 surfaces built.
+14:26:55 -- 0:03:24.419691 -- 1hzy: Patch centers found.
+14:28:52 -- 0:05:21.798398 -- 1hzy: Distances between patches calculated.
+14:28:53 -- 0:05:22.580343 -- 1hzy: Finished analizing protein.
+14:28:53 -- 0:05:22.954945 -- Main: Surface analysis complete. Beginning graphing.

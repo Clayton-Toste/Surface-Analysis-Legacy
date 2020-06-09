@@ -1,0 +1,5 @@
+13:51:06 -- 0:00:00.000530 -- Main: Initialization complete, beginning processing of proteins with codes: '1kzm' with graphing arguments: 'show', 'sizes_outer', 'allowOutliers'.
+13:51:06 -- 0:00:00.001254 -- 1kzm: Skipping fetching of model for protein.
+13:51:06 -- 0:00:00.001530 -- Main: Beginning surface analysis.
+13:51:06 -- 0:00:00.001932 -- 1kzm: Skipping surface analysis for protein because it has already been processed.
+13:51:06 -- 0:00:00.002198 -- Main: Surface analysis complete. Beginning graphing.

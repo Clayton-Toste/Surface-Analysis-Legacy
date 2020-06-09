@@ -1,0 +1,43 @@
+08:22:06 -- 0:00:00.000478 -- Main: Initialization complete, beginning processing of proteins with codes: '1h55', '1yph', '2hrw', '1cf3'.
+08:22:06 -- 0:00:00.001745 -- 1h55: Fetching model.
+08:22:07 -- 0:00:01.092189 -- 1h55: Successfully fetched model.
+08:22:07 -- 0:00:01.093159 -- 1yph: Fetching model.
+08:22:08 -- 0:00:02.621356 -- 1yph: Successfully fetched model.
+08:22:08 -- 0:00:02.622400 -- 2hrw: Fetching model.
+08:22:09 -- 0:00:03.733251 -- 2hrw: Successfully fetched model.
+08:22:09 -- 0:00:03.734318 -- 1cf3: Fetching model.
+08:22:11 -- 0:00:05.312282 -- 1cf3: Successfully fetched model.
+08:22:11 -- 0:00:05.313328 -- Main: Beginning surface analysis.
+08:22:11 -- 0:00:05.313851 -- 1h55: Started protein.
+08:22:12 -- 0:00:06.006944 -- 1h55: File read.
+08:22:13 -- 0:00:07.824881 -- 1h55: 80 patches built, 50 deleted due to small size.
+08:22:56 -- 0:00:50.259703 -- 1h55: Distances built(Patches).
+08:22:56 -- 0:00:50.260313 -- 1h55: 3 surfaces built.
+08:22:56 -- 0:00:50.936451 -- 1h55: Centers built.
+08:23:16 -- 0:01:10.301907 -- 1h55: Distances built(Universal).
+08:23:16 -- 0:01:10.447450 -- 1h55: Finished protein.
+08:23:16 -- 0:01:10.519539 -- 1yph: Started protein.
+08:23:17 -- 0:01:11.855357 -- 1yph: File read.
+08:23:20 -- 0:01:14.702312 -- 1yph: 130 patches built, 91 deleted due to small size.
+08:24:23 -- 0:02:17.861459 -- 1yph: Distances built(Patches).
+08:24:23 -- 0:02:17.862146 -- 1yph: 8 surfaces built.
+08:24:24 -- 0:02:18.732227 -- 1yph: Centers built.
+08:25:14 -- 0:03:07.996903 -- 1yph: Distances built(Universal).
+08:25:14 -- 0:03:08.362408 -- 1yph: Finished protein.
+08:25:14 -- 0:03:08.500083 -- 2hrw: Started protein.
+08:25:15 -- 0:03:09.501076 -- 2hrw: File read.
+08:25:17 -- 0:03:11.132713 -- 2hrw: 85 patches built, 33 deleted due to small size.
+08:25:58 -- 0:03:52.936268 -- 2hrw: Distances built(Patches).
+08:25:58 -- 0:03:52.936825 -- 2hrw: 4 surfaces built.
+08:25:59 -- 0:03:53.477076 -- 2hrw: Centers built.
+08:26:19 -- 0:04:13.392689 -- 2hrw: Distances built(Universal).
+08:26:19 -- 0:04:13.578101 -- 2hrw: Finished protein.
+08:26:19 -- 0:04:13.667075 -- 1cf3: Started protein.
+08:26:21 -- 0:04:15.150755 -- 1cf3: File read.
+08:26:25 -- 0:04:19.431937 -- 1cf3: 181 patches built, 76 deleted due to small size.
+08:26:56 -- 0:04:50.910173 -- 1cf3: Distances built(Patches).
+08:26:56 -- 0:04:50.910902 -- 1cf3: 11 surfaces built.
+08:26:57 -- 0:04:51.476335 -- 1cf3: Centers built.
+08:28:13 -- 0:06:07.756870 -- 1cf3: Distances built(Universal).
+08:28:14 -- 0:06:08.337165 -- 1cf3: Finished protein.
+08:28:14 -- 0:06:08.585258 -- Main: Surface analysis complete. Beginning graphing.

@@ -1,0 +1,13 @@
+14:06:47 -- 0:00:00.000491 -- Main: Initialization complete, beginning processing of proteins with codes: '1l2y' with graphing arguments: 'touching_outer'.
+14:06:47 -- 0:00:00.002916 -- Main: Fetching model for protein with code: '1l2y'.
+14:06:49 -- 0:00:02.452036 -- Main: Successfully fetched model for protein with code: '1l2y'.
+14:06:49 -- 0:00:02.453019 -- Main: Beginning surface analysis.
+14:06:49 -- 0:00:02.453453 -- 1l2y: Started protein.
+14:06:49 -- 0:00:02.547760 -- 1l2y: File read.
+14:06:49 -- 0:00:02.574535 -- 1l2y: 9 patches built, 1 deleted due to small size.
+14:06:50 -- 0:00:03.475608 -- 1l2y: Distances built(Patches).
+14:06:50 -- 0:00:03.476379 -- 1l2y: Surfaces built.
+14:06:50 -- 0:00:03.495315 -- 1l2y: Centers built.
+14:06:50 -- 0:00:03.636467 -- 1l2y: Distances built(Universal).
+14:06:50 -- 0:00:03.647155 -- 1l2y: Finished protein.
+14:06:50 -- 0:00:03.648908 -- Main: Surface analysis complete. Beginning graphing.

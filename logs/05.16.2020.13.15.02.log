@@ -1,0 +1,5 @@
+13:15:02 -- 0:00:00.000897 -- Main: Initialization complete, beginning processing of proteins with codes: '1urq'.
+13:15:02 -- 0:00:00.001590 -- 1urq: Fetching model.
+13:15:03 -- 0:00:01.336357 -- 1urq: Successfully fetched model.
+13:15:03 -- 0:00:01.337354 -- Main: Beginning surface analysis.
+13:15:03 -- 0:00:01.338481 -- 1urq: Started protein.

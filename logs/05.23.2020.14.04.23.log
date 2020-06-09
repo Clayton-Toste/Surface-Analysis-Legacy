@@ -1,0 +1,5 @@
+14:04:23 -- 0:00:00.000555 -- Main: Initialization complete, beginning processing of proteins with codes: '1h55' with graphing arguments: 'distances_outer', 'show'.
+14:04:23 -- 0:00:00.001251 -- 1h55: Skipping fetching of model for protein.
+14:04:23 -- 0:00:00.001627 -- Main: Beginning surface analysis.
+14:04:23 -- 0:00:00.002019 -- 1h55: Skipping surface analysis for protein because it has already been processed.
+14:04:23 -- 0:00:00.002336 -- Main: Surface analysis complete. Beginning graphing.

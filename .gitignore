@@ -3,7 +3,14 @@ __pycache__/
 build/
 dist/
 imagesBU/
+images_chris/
+statistics/*
+!statistics/.gitkeep 
+images/*
+!images/.gitkeep 
 proteins/*
-logs/*
+!proteins/.gitkeep 
+logs/*.
+!logs/.gitkeep 
 Surface_Analysis.egg-info/
 BU_surface_Analysis.py

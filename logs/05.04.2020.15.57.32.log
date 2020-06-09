@@ -1,0 +1,5 @@
+15:57:32 -- 0:00:00.000623 -- Main: Initialization complete, beginning processing of proteins with codes: 'covi'.
+15:57:32 -- 0:00:00.001381 -- covi: Skipped fetching of model for protein.
+15:57:32 -- 0:00:00.001718 -- Main: Beginning surface analysis.
+15:57:32 -- 0:00:00.002275 -- Main: Skipping surface analysis for protein with code: 'covi', because it has already been processed.
+15:57:32 -- 0:00:00.003170 -- Main: Surface analysis complete. Beginning graphing.

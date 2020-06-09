@@ -1,0 +1,5 @@
+13:41:23 -- 0:00:00.000727 -- Main: Initialization complete, beginning processing of proteins with codes: '2hrw' with graphing arguments: 'sizes_outer'.
+13:41:23 -- 0:00:00.001955 -- 2hrw: Skipped fetching of model for protein.
+13:41:23 -- 0:00:00.002278 -- Main: Beginning surface analysis.
+13:41:23 -- 0:00:00.002729 -- Main: Skipping surface analysis for protein with code: '2hrw', because it has already been processed.
+13:41:23 -- 0:00:00.003033 -- Main: Surface analysis complete. Beginning graphing.

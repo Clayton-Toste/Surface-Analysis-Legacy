@@ -1,0 +1,13 @@
+16:15:24 -- 0:00:00.000556 -- Main: Initialization complete, beginning processing of proteins with codes: 'yph' with graphing arguments: 'distances_outer', 'show'.
+16:15:24 -- 0:00:00.001457 -- yph: Fetching model.
+16:15:25 -- 0:00:00.849651 -- yph: Successfully fetched model.
+16:15:25 -- 0:00:00.850562 -- Main: Beginning surface analysis.
+16:15:25 -- 0:00:00.851323 -- yph: Started protein.
+16:15:25 -- 0:00:00.901248 -- yph: File read.
+16:15:25 -- 0:00:00.913731 -- yph: 1 patches built, 0 deleted due to small size.
+16:15:25 -- 0:00:00.914557 -- yph: Distances built(Patches).
+16:15:25 -- 0:00:00.915230 -- yph: 1 surfaces built.
+16:15:25 -- 0:00:00.917752 -- yph: Centers built.
+16:15:25 -- 0:00:00.919116 -- yph: Distances built(Universal).
+16:15:25 -- 0:00:00.961900 -- yph: Finished protein.
+16:15:25 -- 0:00:00.962498 -- Main: Surface analysis complete. Beginning graphing.

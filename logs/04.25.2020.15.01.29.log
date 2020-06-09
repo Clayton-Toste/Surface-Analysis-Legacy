@@ -1,0 +1,13 @@
+15:01:29 -- 0:00:00.000537 -- Main: Initialization complete, beginning processing of proteins with codes: '2hrw' with graphing arguments: 'distances_outer'.
+15:01:29 -- 0:00:00.001858 -- 2hrw: Fetching model.
+15:01:30 -- 0:00:01.183413 -- 2hrw: Successfully fetched model.
+15:01:30 -- 0:00:01.184249 -- Main: Beginning surface analysis.
+15:01:30 -- 0:00:01.184762 -- 2hrw: Started protein.
+15:01:31 -- 0:00:01.860707 -- 2hrw: File read.
+15:01:33 -- 0:00:03.429021 -- 2hrw: 85 patches built, 33 deleted due to small size.
+15:02:19 -- 0:00:49.444670 -- 2hrw: Distances built(Patches).
+15:02:19 -- 0:00:49.445336 -- 2hrw: 4 surfaces built.
+15:02:19 -- 0:00:50.024712 -- 2hrw: Centers built.
+15:02:42 -- 0:01:12.551219 -- 2hrw: Distances built(Universal).
+15:02:42 -- 0:01:12.698230 -- 2hrw: Finished protein.
+15:02:42 -- 0:01:12.773907 -- Main: Surface analysis complete. Beginning graphing.

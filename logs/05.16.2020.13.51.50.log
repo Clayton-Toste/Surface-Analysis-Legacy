@@ -1,0 +1,5 @@
+13:51:50 -- 0:00:00.000851 -- Main: Initialization complete, beginning processing of proteins with codes: '1urq' with graphing arguments: 'sizes_outer', 'touching_inner'.
+13:51:50 -- 0:00:00.001503 -- 1urq: Skipping fetching of model for protein.
+13:51:50 -- 0:00:00.002093 -- Main: Beginning surface analysis.
+13:51:50 -- 0:00:00.002530 -- 1urq: Skipping surface analysis for protein because it has already been processed.
+13:51:50 -- 0:00:00.002834 -- Main: Surface analysis complete. Beginning graphing.

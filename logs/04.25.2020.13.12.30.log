@@ -1,0 +1,13 @@
+13:12:30 -- 0:00:00.000912 -- Main: Initialization complete, beginning processing of proteins with codes: '1kzm'.
+13:12:30 -- 0:00:00.006571 -- Main: Fetching model for protein with code: '1kzm'.
+13:12:32 -- 0:00:01.232972 -- Main: Successfully fetched model for protein with code: '1kzm'.
+13:12:32 -- 0:00:01.234553 -- Main: Beginning surface analysis.
+13:12:32 -- 0:00:01.235616 -- 1kzm: Started protein.
+13:12:32 -- 0:00:02.047195 -- 1kzm: File read.
+13:12:35 -- 0:00:04.243046 -- 1kzm: 86 patches built, 41 deleted due to small size.
+13:13:26 -- 0:00:55.912043 -- 1kzm: Distances built(Patches).
+13:13:26 -- 0:00:55.913694 -- 1kzm: 3surfaces built.
+13:13:27 -- 0:00:57.008435 -- 1kzm: Centers built.
+13:13:53 -- 0:01:22.165015 -- 1kzm: Distances built(Universal).
+13:13:53 -- 0:01:22.353248 -- 1kzm: Finished protein.
+13:13:53 -- 0:01:22.442904 -- Main: Surface analysis complete. Beginning graphing.

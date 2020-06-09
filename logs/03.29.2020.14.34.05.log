@@ -1,0 +1,5 @@
+14:34:05 -- 0:00:00.000705: Initialization complete, beginning processing of proteins with codes: '1kzm'.
+14:34:05 -- 0:00:00.001324: Skipped fetching of model for protein with code: '1kzm' because protein's model as already been fetched.
+14:34:05 -- 0:00:00.001826: Beginning surface analysis.
+14:34:05 -- 0:00:00.003040: Skipping surface analysis for protein with code: '1kzm', because it has already been processed.
+14:34:05 -- 0:00:00.003440: Surface analysis complete. Beginning graphing.
