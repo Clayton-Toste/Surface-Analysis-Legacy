@@ -4,6 +4,7 @@ build/
 dist/
 imagesBU/
 images_chris/
+images_marco/
 statistics/*
 !statistics/.gitkeep 
 images/*
