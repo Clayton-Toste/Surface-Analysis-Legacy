@@ -1,0 +1,20 @@
+{
+  "arch": "x86_64",
+  "build": "0",
+  "build_number": 0,
+  "depends": [],
+  "files": [
+    "Library/ssl/cacert.pem",
+    "Library/ssl/cert.pem"
+  ],
+  "installed_by": "PyMOL-2.3.2-Windows-x86_64.exe",
+  "license": "ISC",
+  "link": null,
+  "md5": "6d581fc902e0485e9c3259773c6e43a9",
+  "name": "ca-certificates",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1559573111494,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/ca-certificates-2019.5.15-0.tar.bz2",
+  "version": "2019.5.15"
+}

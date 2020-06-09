@@ -1,0 +1,22 @@
+{
+  "build": "py37_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.7,<3.8.0a0",
+    "win_inet_pton"
+  ],
+  "features": "",
+  "fn": "pysocks-1.7.0-py37_0.tar.bz2",
+  "license": "BSD 3-Clause",
+  "license_family": "BSD",
+  "md5": "e4e08777e59494ec127e19c9b2dd3d3d",
+  "name": "pysocks",
+  "size": 30464,
+  "subdir": "win-64",
+  "timestamp": 1557856276594,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/pysocks-1.7.0-py37_0.tar.bz2",
+  "version": "1.7.0"
+}

@@ -1,0 +1,27 @@
+{
+  "build": "py37h7a1dbc1_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "asn1crypto >=0.21.0",
+    "cffi >=1.7",
+    "idna >=2.1",
+    "openssl >=1.1.1c,<1.1.2a",
+    "python >=3.7,<3.8.0a0",
+    "six >=1.4.1",
+    "vc >=14.1,<15.0a0"
+  ],
+  "features": "",
+  "fn": "cryptography-2.7-py37h7a1dbc1_0.tar.bz2",
+  "license": "Apache 2.0 or BSD 3-Clause, PSF 2",
+  "license_family": "BSD",
+  "md5": "9e4c5385c50cf3e3c1657c85fac64217",
+  "name": "cryptography",
+  "size": 577345,
+  "subdir": "win-64",
+  "timestamp": 1559575716934,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/cryptography-2.7-py37h7a1dbc1_0.tar.bz2",
+  "version": "2.7"
+}

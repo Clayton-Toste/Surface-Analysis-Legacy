@@ -1,0 +1,32 @@
+{
+  "arch": "x86_64",
+  "build": "h508b16e_0",
+  "build_number": 0,
+  "depends": [
+    "vc >=14.1,<15.0a0",
+    "xz >=5.2.4,<6.0a0",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "files": [
+    "Library/bin/libzstd.dll",
+    "Library/bin/zstd.exe",
+    "Library/include/cover.h",
+    "Library/include/zbuff.h",
+    "Library/include/zdict.h",
+    "Library/include/zstd.h",
+    "Library/include/zstd_errors.h",
+    "Library/lib/libzstd_static.lib",
+    "Library/lib/zstd.lib"
+  ],
+  "installed_by": "PyMOL-2.3.2-Windows-x86_64.exe",
+  "license": "BSD 3-Clause",
+  "license_family": "BSD",
+  "link": null,
+  "md5": "251803bb127a0b26ee8c92106d3ab1ae",
+  "name": "zstd",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1541460124785,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/zstd-1.3.7-h508b16e_0.tar.bz2",
+  "version": "1.3.7"
+}

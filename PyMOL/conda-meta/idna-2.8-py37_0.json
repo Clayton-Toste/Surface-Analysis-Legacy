@@ -1,0 +1,41 @@
+{
+  "arch": "x86_64",
+  "build": "py37_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.7,<3.8.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/idna-2.8-py3.7.egg-info/PKG-INFO",
+    "Lib/site-packages/idna-2.8-py3.7.egg-info/SOURCES.txt",
+    "Lib/site-packages/idna-2.8-py3.7.egg-info/dependency_links.txt",
+    "Lib/site-packages/idna-2.8-py3.7.egg-info/installed-files.txt",
+    "Lib/site-packages/idna-2.8-py3.7.egg-info/top_level.txt",
+    "Lib/site-packages/idna/__init__.py",
+    "Lib/site-packages/idna/__pycache__/__init__.cpython-37.pyc",
+    "Lib/site-packages/idna/__pycache__/codec.cpython-37.pyc",
+    "Lib/site-packages/idna/__pycache__/compat.cpython-37.pyc",
+    "Lib/site-packages/idna/__pycache__/core.cpython-37.pyc",
+    "Lib/site-packages/idna/__pycache__/idnadata.cpython-37.pyc",
+    "Lib/site-packages/idna/__pycache__/intranges.cpython-37.pyc",
+    "Lib/site-packages/idna/__pycache__/package_data.cpython-37.pyc",
+    "Lib/site-packages/idna/__pycache__/uts46data.cpython-37.pyc",
+    "Lib/site-packages/idna/codec.py",
+    "Lib/site-packages/idna/compat.py",
+    "Lib/site-packages/idna/core.py",
+    "Lib/site-packages/idna/idnadata.py",
+    "Lib/site-packages/idna/intranges.py",
+    "Lib/site-packages/idna/package_data.py",
+    "Lib/site-packages/idna/uts46data.py"
+  ],
+  "installed_by": "PyMOL-2.3.2-Windows-x86_64.exe",
+  "license": "BSD Like",
+  "link": null,
+  "md5": "6afef2ec3bc9568cb43c92080008a802",
+  "name": "idna",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1545083401521,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/idna-2.8-py37_0.tar.bz2",
+  "version": "2.8"
+}

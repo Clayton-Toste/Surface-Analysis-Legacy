@@ -1,0 +1,4 @@
+channels:
+  - https://conda.anaconda.org/schrodinger
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/free

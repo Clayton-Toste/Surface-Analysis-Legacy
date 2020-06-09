@@ -1,0 +1,18 @@
+{
+  "arch": "x86_64",
+  "build": "1",
+  "build_number": 1,
+  "depends": [],
+  "files": [
+    "Library/bin/apbs.exe"
+  ],
+  "installed_by": "PyMOL-2.3.2-Windows-x86_64.exe",
+  "license": "BSD-like",
+  "link": null,
+  "md5": "d96bf8ff23f4d4b59cb9383a498f1afe",
+  "name": "apbs",
+  "platform": "win",
+  "subdir": "win-64",
+  "url": "https://conda.anaconda.org/schrodinger/win-64/apbs-1.5-1.tar.bz2",
+  "version": "1.5"
+}

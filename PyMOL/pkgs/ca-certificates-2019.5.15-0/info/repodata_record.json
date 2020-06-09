@@ -1,0 +1,18 @@
+{
+  "build": "0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [],
+  "features": "",
+  "fn": "ca-certificates-2019.5.15-0.tar.bz2",
+  "license": "ISC",
+  "md5": "6d581fc902e0485e9c3259773c6e43a9",
+  "name": "ca-certificates",
+  "size": 169724,
+  "subdir": "win-64",
+  "timestamp": 1559573111494,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/ca-certificates-2019.5.15-0.tar.bz2",
+  "version": "2019.5.15"
+}

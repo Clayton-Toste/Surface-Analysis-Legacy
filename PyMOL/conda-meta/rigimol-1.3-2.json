@@ -1,0 +1,21 @@
+{
+  "arch": "x86_64",
+  "build": "2",
+  "build_number": 2,
+  "depends": [
+    "vs2013_runtime"
+  ],
+  "files": [
+    "Library/bin/rigimol.exe"
+  ],
+  "installed_by": "PyMOL-2.3.2-Windows-x86_64.exe",
+  "license": "proprietary - Schrodinger",
+  "license_family": "Proprietary",
+  "link": null,
+  "md5": "35e50e07a352ff860c3d2f580e0b0178",
+  "name": "rigimol",
+  "platform": "win",
+  "subdir": "win-64",
+  "url": "https://conda.anaconda.org/schrodinger/win-64/rigimol-1.3-2.tar.bz2",
+  "version": "1.3"
+}

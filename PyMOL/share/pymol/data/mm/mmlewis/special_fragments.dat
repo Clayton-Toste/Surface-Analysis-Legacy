@@ -1,0 +1,262 @@
+#
+# at this point of the typing task we don't know any bondorders or 
+# formal charges. Only atomic numbers and the connect table are known.
+#
+   fo  comVal pattern                                       label   comment
+   int int    char                                          char    char
+#
+    0   3     [IrX3+0]                                      ---    # 
+    0   3     [AlX3+0]                                      ---    # 
+    0   2     [PtX2+0]                                      ---    # 
+    0   2     [CuX2+0]                                      ---    # 
+    0   1     [CuX1+0]                                      ---    # 
+    0   2     [ZnX2+0]                                      ---    # 
+    4  -2     [UX2](-[OX1])-[OX1]                           +++    # [UX2+4](-[O-])-[O-]
+   -1   2     !!!                                           !!!    # O     
+   -1   2     !!!                                           !!!    # O     
+    1   2     [#6X3+]                                       !!!    # carbocation
+    1   4     [#6X3-]                                       !!!    # carbanion 
+    0   6     [WX4]                                         !!!    # WX4 
+    0   5     [VX4]                                         !!!    # VX4 
+    0   6     [MoX4]                                        !!!    # MoX4 
+    0   5     [AsX4+0]                                      !!!    # tetravalent Arsenic ifo=5
+   -1   5     [BX4]                                         !!!    # tetravalent boron
+    1   1     [FX2]~[BX4]                                   !!!    # coordinated fluoro
+    1   2     [OX3]~[BX4]                                   !!!    # coordinated ether
+   -1   2     [O;X1]~[C;X4]                                 !!!    # O- 
+    1   3     [N;X4] 				            !!!    # NR4+
+   -1   3     [NX1]~[NX2]~[NX2]                             +++    # azide
+    1   3     !!!                                           !!!    # azide
+    0   3     !!!                                           !!!    # azide
+    0   3     [NX2](~[#1])~[NX2]~[NX2]                      +++    # protonated azide
+    0   1     !!!                                           !!!    # protonated azide
+    1   3     !!!                                           !!!    # protonated azide
+    0   3     !!!                                           !!!    # protonated azide
+    0   3     [NX2](-[*])=[NX2]=[NX2,CX3]-[*]               +++    # alkylated, protonated azide ifo=5
+    0   0     ---                                           !!!    # alkylated, protonated azide ifo=5
+    1   3     !!!                                           !!!    # alkylated, protonated azide ifo=5
+    0   0     ---                                           !!!    # alkylated, protonated azide ifo=5
+    0   0     ---                                           !!!    # alkylated, protonated azide ifo=5
+    0   4     [CX3]~[NX2]~[NX1]                             +++    # diazomethane
+    1   3     !!!                                           !!!    # diazomethane
+   -1   3     !!!                                           !!!    # diazomethane
+    1   3     [NX3]~[CX3](~[!N;!{O,S;X1}])~[NX3;+0]~[C;X3](~[!N;!{O,S;X1}])~[N;X3;+0]  +++    # N+= in amidine
+    0   4     !!!                                           !!!    # N+= in amidine
+    0   0     ---                                           !!!    # N+= in amidine
+    0   3     !!!                                           !!!    # N+= in amidine
+    0   4     !!!                                           !!!    # N+= in amidine
+    0   0     ---                                           !!!    # N+= in amidine
+    1   3     !!!                                           !!!    # N+= in amidine
+    1   3     [NX3]~[CX3](~[NX3;+0])~[NX3;+0]~[C;X3](~[NX3;+0])~[N;X3;+0]  +++    # N+= in guanidine
+    0   4     !!!                                           !!!    # N+= in guanidine
+    0   3     !!!                                           !!!    # N+= in guanidine
+    0   3     !!!                                           !!!    # N+= in guanidine
+    0   4     !!!                                           !!!    # N+= in guanidine
+    0   3     !!!                                           !!!    # N+= in guanidine
+    1   3     !!!                                           !!!    # N+= in guanidine
+    0   3     [NX3](~[CX3](~[!N;!{O,S;X1}])~[NX3;+0])~[C;X3](~[!N;!{O,S;X1}])~[N;X3;+0]  +++    # N+= in amidine/guanidine
+    0   4     !!!                                           !!!    # N+= in amidine
+    0   0     ---                                           !!!    # N+= in amidine
+    1   3     !!!                                           !!!    # N+= in amidine
+    0   4     !!!                                           !!!    # N+= in amidine
+    0   0     ---                                           !!!    # N+= in amidine
+    1   3     !!!                                           !!!    # N+= in amidine
+    0   3     [NX3](~[CX3](~[NX3;+0])~[NX3;+0])~[C;X3](~[NX3;+0])~[NX3;+0]  +++    # N+= in guanidine
+    0   4     !!!                                           !!!    # N+= in guanidine
+    0   3     !!!                                           !!!    # N+= in guanidine
+    1   3     !!!                                           !!!    # N+= in guanidine
+    0   4     !!!                                           !!!    # N+= in guanidine
+    0   3     !!!                                           !!!    # N+= in guanidine
+    1   3     !!!                                           !!!    # N+= in guanidine
+    0   3     [NX3]~[CX3]1~[NX3]~[CX3](~[!{O,S;X1}])~[CX3](~[!{O,S;X1}])~[NX3]~1        +++    # N in 2-amino imidazolium
+    0   4     !!!                                           !!!    # C  in imidazolium
+    1   3     !!!                                           !!!    # N+  in imidazolium
+    0   4     !!!                                           !!!    # C  in imidazolium
+    0   0     ---                                           !!!    # !   in imidazolium
+    0   4     !!!                                           !!!    # C  in imidazolium
+    0   0     ---                                           !!!    # !   in imidazolium
+    0   3     !!!                                           !!!    # N+  in imidazolium
+    0   3     [NX3]~[CX3]1~[NX3]~[CX3]~[CX3]~[CX3]~[CX3](~[!{O,S;X1}])~1 +++ # N+ in 2-amino pyridine
+    0   4     !!!                                           !!!    # C  in 2-amino pyridine
+    1   3     !!!                                           !!!    # C  in 2-amino pyridine
+    0   4     !!!                                           !!!    # N  in 2-amino pyridine
+    0   4     !!!                                           !!!    # C  in 2-amino pyridine
+    0   4     !!!                                           !!!    # C  in 2-amino pyridine
+    0   4     !!!                                           !!!    # C  in 2-amino pyridine
+    0   0     ---                                           !!!    # C  in 2-amino pyridine
+    1   3     [NX3]1~[CX3](~[NX3])~[CX3]~[CX3]~[CX3]~[CX3](~[!{O,S;X1}])~1 +++ # N+ in 2-amino pyridine
+    0   4     !!!                                           !!!    # C  in 2-amino pyridine
+    0   3     !!!                                           !!!    # C  in 2-amino pyridine
+    0   4     !!!                                           !!!    # N  in 2-amino pyridine
+    0   4     !!!                                           !!!    # C  in 2-amino pyridine
+    0   4     !!!                                           !!!    # C  in 2-amino pyridine
+    0   4     !!!                                           !!!    # C  in 2-amino pyridine
+    0   0     ---                                           !!!    # C  in 2-amino pyridine
+    0   3     [NX3;H0]1~[CX3](~[NX3])~[NX3;H1;+0]~[CX3]~[CX3](~[!{O,S;X1}])~1 +++ # N+ in 2-amino imidazolium
+    0   4     !!!                                           !!!    # C  in imidazolium
+    0   3     !!!                                           !!!    # C  in imidazolium
+    1   3     !!!                                           !!!    # N  in imidazolium
+    0   4     !!!                                           !!!    # C  in imidazolium
+    0   4     !!!                                           !!!    # C  in imidazolium
+    0   0     ---                                           !!!    # C  in imidazolium
+    1   3     [NX3;H1]1~[CX3](~[NX3])~[NX3;H0;+0]~[CX3]~[CX3](~[!{O,S;X1}])~1 +++ # N+ in 2-amino imidazolium
+    0   4     !!!                                           !!!    # C  in imidazolium
+    0   3     !!!                                           !!!    # C  in imidazolium
+    0   3     !!!                                           !!!    # N  in imidazolium
+    0   4     !!!                                           !!!    # C  in imidazolium
+    0   4     !!!                                           !!!    # C  in imidazolium
+    0   0     ---                                           !!!    # C  in imidazolium
+    1   3     [NX3]1~[CX3](~[NX3;+0])~[NX3;+0]~[CX3]~[CX3](~[!{O,S;X1}])~1 +++ # N+ in 2-amino imidazolium
+    0   4     !!!                                           !!!    # C  in imidazolium
+    0   3     !!!                                           !!!    # C  in imidazolium
+    0   3     !!!                                           !!!    # N  in imidazolium
+    0   4     !!!                                           !!!    # C  in imidazolium
+    0   4     !!!                                           !!!    # C  in imidazolium
+    0   0     ---                                           !!!    # C  in imidazolium
+    0   3     [NX3;H0]~[CX3](~[NX3;H1,H2;+0])~[NX3;H1,H2;+0] +++   # NX3+= in guianidinium
+    0   4     !!!                                           !!!    # NX3+= in guianidinium
+    1   3     !!!                                           !!!    # NX3+= in guianidinium
+    0   3     !!!                                           !!!    # NX3+= in guianidinium
+    0   3     [NX3;H1]~[CX3](~[NX3;H1,H2;+0])~[NX3;H2;+0]   +++    # NX3+= in guianidinium
+    0   4     !!!                                           !!!    # NX3+= in guianidinium
+    0   3     !!!                                           !!!    # NX3+= in guianidinium
+    1   3     !!!                                           !!!    # NX3+= in guianidinium
+    0   3     [NX3;H1]~[CX3](~[NX3;H1,H2;+0])~[NX3;H0;+0]   +++    # NX3+= in guianidinium
+    0   4     !!!                                           !!!    # NX3+= in guianidinium
+    1   3     !!!                                           !!!    # NX3+= in guianidinium
+    0   3     !!!                                           !!!    # NX3+= in guianidinium
+    1   3     [NX3;H2]~[CX3](~[NX3;H0,H1;+0])~[NX3;H0,H1,H2;+0] +++ # NX3+= in guianidinium
+    0   4     !!!                                           !!!    # NX3+= in guianidinium
+    0   3     !!!                                           !!!    # NX3+= in guianidinium
+    0   3     !!!                                           !!!    # NX3+= in guianidinium
+    1   3     [NX3]~[CX3](~[NX3;+0])~[NX3;+0]               +++    # NX3+= in guianidinium
+    0   4     !!!                                           !!!    # NX3+= in guianidinium
+    0   3     !!!                                           !!!    # NX3+= in guianidinium
+    0   3     !!!                                           !!!    # NX3+= in guianidinium
+    1   3     [NX3]1~[CX3](~[!N;!{O,S;X1}])~[NX3;+0]~[CX3]~[CX3]~1 +++    # N+= in amidine 
+    0   4     !!!                                           !!!    # N+= in amidine              
+    0   0     ---                                           !!!    # N+= in amidine              
+    0   3     !!!                                           !!!    # N+= in amidine              
+    0   4     !!!                                           !!!    # N+= in amidine              
+    0   4     !!!                                           !!!    # N+= in amidine              
+    0   3     [NX3;H0]~[CX3](~[!N;!{O,S;X1}])~[NX3;H1,H2;+0] +++    # N+= in amidine 
+    0   4     !!!                                           !!!    # N+= in amidine              
+    0   0     ---                                           !!!    # N+= in amidine              
+    1   3     !!!                                           !!!    # N+= in amidine              
+    0   3     [NX3;H1]~[C;X3](~[!N;!{O,S;X1}])~[NX3;H2+0]   +++    # N+= in amidine 
+    0   4     !!!                                           !!!    # N+= in amidine              
+    0   0     ---                                           !!!    # N+= in amidine              
+    1   3     !!!                                           !!!    # N+= in amidine              
+    1   3     [NX3;H2]~[C;X3](~[!N;!{O,S;X1}])~[NX3]        +++    # N+= in amidine 
+    0   4     !!!                                           !!!    # N+= in amidine              
+    0   0     ---                                           !!!    # N+= in amidine              
+    0   3     !!!                                           !!!    # N+= in amidine              
+    0   3     [N;X3;H2]~[C;X3](~[!N;!{O,S;X1}])~[NX3;H1]    +++    # N+= in amidine              
+    0   4     !!!                                           !!!    # N+= in amidine              
+    0   0     ---                                           !!!    # N+= in amidine              
+    1   3     !!!                                           !!!    # N+= in amidine              
+    0   3     [N;X3]~[C;X3](~[!N;!{O,S;X1}])~[N;X3]         +++    # N+= in amidine              
+    0   4     !!!                                           !!!    # N+= in amidine              
+    0   0     ---                                           !!!    # N+= in amidine              
+    1   3     !!!                                           !!!    # N+= in amidine      
+    1   3     [NX3]1(~[#6,#1])~[CX3](~[!{O,S;X1}])~[CX3]~[CX3]~[CX3]~[CX3](~[!{O,S;X1}])~1 !!!    # N+ in pyridinium
+    1   3     [NX3;H1]1~[CX3](~[!N;!{O,S;X1}])~[NX3;H0;+0]~[CX3]~[CX3](~[!{O,S;X1}])~1 +++    # N+ in imidazolium
+    0   4     !!!                                           !!!    # C  in imidazolium
+    0   0     ---                                           !!!    # C  in imidazolium
+    0   3     !!!                                           !!!    # N  in imidazolium
+    0   4     !!!                                           !!!    # C  in imidazolium
+    0   4     !!!                                           !!!    # C  in imidazolium
+    0   0     ---                                           !!!    # C  in imidazolium
+    0   3     [NX3;H0]1~[CX3](~[!N;!{O,S;X1}])~[NX3;H1;+0]~[CX3]~[CX3](~[!{O,S;X1}])~1 +++    # N+ in imidazolium
+    0   4     !!!                                           !!!    # C  in imidazolium
+    0   0     ---                                           !!!    # C  in imidazolium
+    1   3     !!!                                           !!!    # N  in imidazolium
+    0   4     !!!                                           !!!    # C  in imidazolium
+    0   4     !!!                                           !!!    # C  in imidazolium
+    0   0     ---                                           !!!    # C  in imidazolium
+    1   3     [NX3]1~[CX3](~[!N;!{O,S;X1}])~[NX3]~[CX3]~[CX3](~[!{O,S;X1}])~1 +++ # N+ in imidazolium
+    0   4     !!!                                           !!!    # C  in imidazolium
+    0   0     ---                                           !!!    # C  in imidazolium
+    0   3     !!!                                           !!!    # N  in imidazolium
+    0   4     !!!                                           !!!    # C  in imidazolium
+    0   4     !!!                                           !!!    # C  in imidazolium
+    0   0     ---                                           !!!    # C  in imidazolium
+   -1   3     [NX2]1~[CX3]~[NX2]~[NX2]~[NX2]~1              +++    # N- tetrazole anion         
+    0   4     !!!                                           !!!    # tetrazole anion
+    0   3     !!!                                           !!!    # tetrazole anion
+    0   3     !!!                                           !!!    # tetrazole anion
+    0   3     !!!                                           !!!    # tetrazole anion
+   -1   3     [NX2]~[SX4](~[OX1])~[OX1]                     !!!    # N- in ...                   
+   -1   2     [O;X1]~[C;X3]~[O;X1]                          +++    # O- in CO2-
+    0   4     !!!                                           !!!    # C  in CO2-
+    0   2     !!!                                           !!!    # =O in CO2-
+    1   3     [P;X4](~[C;X4])(~[C;X4])(~[C;X4])~[C;X4]      !!!    # PR4+
+   -1   2     [S;X1]~[C;X4]                                 !!!    # CS-
+    0   4     [SiX4]                                        !!!    # Si 
+    0   5     [PX5]                                         !!!    # pentavalent phosphorous atom
+    0   5     [PX4](~[O])(~[O])                             !!!    # pentavalent phosphorous atom
+    0   5     [PX4](~[OX1])                                 !!!    # pentavalent phosphorous atom
+    0   5     [PX4](~[SX1])                                 !!!    # pentavalent phosphorous atom
+    0   5     [PX4](=[*])(-[*])(-[*])-[*]                   !!!    # pentavalent phosphorous atom ifo=5
+    1   3     [PX4](-[*])(-[*])(-[*])-[*]                   !!!    # tetravalent phosphorous atom ifo=5
+    0   3     [P]                                           !!!    # P atom
+    0   2     [S]                                           !!!    # S atom
+    0   5     [NX3](-[!{OX1}])(=[OX1])=[OX1]                +++    # nitro for ifo=5
+    0   0     ---                                           !!!    # nitro for ifo=5
+    0   2     !!!                                           !!!    # nitro for ifo=5
+    0   2     !!!                                           !!!    # nitro for ifo=5
+    0   2     [OX1]=[NX3](-[!{OX1}])(=[OX1])                +++    # nitro for ifo=5
+    0   5     !!!                                           !!!    # nitro for ifo=5
+    0   0     ---                                           !!!    # nitro for ifo=5
+    0   2     !!!                                           !!!    # nitro for ifo=5
+    1   3     [NX3](~[OX1])~[OX1]                           +++    # nitro
+   -1   2     !!!                                           !!!    # nitro
+    0   2     !!!                                           !!!    # nitro
+    1   3     [NX3](~[OX1])~[!{OX1}]                        +++    # N-oxide
+   -1   2     !!!                                           !!!    # N-oxide
+    0   0     ---                                           !!!    # N-oxide
+   -1   2     [OX1]~[NX3]~[OX1]                             +++    # nitro
+    1   3     !!!                                           !!!    # nitro
+    0   2     !!!                                           !!!    # nitro
+   -1   2     [OX1]~[NX3](~[!{OX1}])~[!{OX1}]               +++    # N-oxide 
+    1   3     !!!                                           !!!    # N-oxide
+    0   0     ---                                           !!!    # N-oxide
+    0   0     ---                                           !!!    # N-oxide
+    0   3     [N]                                           !!!    # tri valent N atom
+    0   5     [NX5]                                         !!!    # penta valent N atom
+    0   5     [PX3](~[OX1,SX1])(~[OX1,SX1])[!{OX1,SX1}]     !!!    # tri valent P atom with 2 terminal oxygens
+    0   3     [PX3]                                         !!!    # tri valent P atom
+    0   4     [SX3](~[OX1,S;X1])(~[!{O,S;X1}])~[!{O,S;X1}]  !!!    # [SX3]=O with only one terminal O bound
+    0   4     [SX3](~[O,S;X1])(~[O,S;X1])                   !!!    # [SX3](=O)=O with two terminal O's
+    0   4     [SX3]                                         !!!    # [SX3] general
+    1   2     [SX3](-[*])(-[*])-[*]                         !!!    # proto- or alkylated SX3 ifo=5
+    0   6     [SX4](~[OX1,SX1,#7X2])(~[OX1,SX1,#7X2])        !!!    # [SX4](=O)=O with two double bonds
+    0   6     [SX4](=[OX1,SX1,#7X2,#6X3])(=[OX1,SX1,#7X2,#6X3])(-[*])-[*]  !!!    # [SX4](=)= with two double bonds
+    0   6     [SX4](~[OX2+,OX1,SX1,#7X2])(~[OX1,SX1,#7X2])        !!!    # [SX4](=O)=O with two double bonds ifo=5
+    0   6     [SX6]                                         !!!    # hexa valent S atom
+    0   4     [SX2-0](~[O,S;X1;-0])                         !!!    # =S=O
+    0   4     [SX2](=[*])=[*]                               !!!    # =S=  ifo=5
+    0   4     [SX4]                                         !!!    # S with 4 connections
+    0   7     [ClX4]                                        !!!    # Cl(=O)(=O)(=O)[O-]
+    0   3     [NX2]1~[CX3]~[CX3]~[CX3]~[NX2]~[CX3]~[CX3]~[CX3]~[NX2]~[CX3]~[CX3]~[CX3]~[NX2]~[CX3]~[CX3]~[CX3]~1 +++    # N in heme
+    0   4     !!!                                           !!!    # C in heme
+    0   4     !!!                                           !!!    # C in heme
+    0   4     !!!                                           !!!    # C in heme
+   -1   3     !!!                                           !!!    # N in heme
+    0   4     !!!                                           !!!    # C in heme
+    0   4     !!!                                           !!!    # C in heme
+    0   4     !!!                                           !!!    # C in heme
+    0   3     !!!                                           !!!    # N in heme
+    0   4     !!!                                           !!!    # C in heme
+    0   4     !!!                                           !!!    # C in heme
+    0   4     !!!                                           !!!    # C in heme
+   -1   3     !!!                                           !!!    # N in heme
+    0   4     !!!                                           !!!    # C in heme
+    0   4     !!!                                           !!!    # C in heme
+    0   4     !!!                                           !!!    # C in heme
+    0   3     !!!                                           !!!    # N in heme
+    0   4     !!!                                           !!!    # C in heme
+    0   4     !!!                                           !!!    # C in heme
+    0   4     !!!                                           !!!    # C in heme
+    0   2     [FeX2]                                        !!!    # Fe Covalent Bond
+    0   4     [SeX3]                                        !!!    # Se Covalent Bond

@@ -1,0 +1,22 @@
+{
+  "arch": "x86_64",
+  "build": "py37_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/schrodinger/win-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.7,<3.8.0a0"
+  ],
+  "features": "",
+  "fn": "pdb2pqr-2.1.1-py37_1.tar.bz2",
+  "license": "BSD-like",
+  "md5": "410aecee085e29ebc92bfb3789649aa1",
+  "name": "pdb2pqr",
+  "platform": "win32",
+  "size": 462633,
+  "subdir": "win-64",
+  "timestamp": 1533119557349,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/schrodinger/win-64/pdb2pqr-2.1.1-py37_1.tar.bz2",
+  "version": "2.1.1"
+}

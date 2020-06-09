@@ -1,0 +1,31 @@
+{
+  "build": "py37_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [
+    "conda-build >=3",
+    "conda-env >=2.6",
+    "cytoolz >=0.8.1",
+    "setuptools >=31.0.1"
+  ],
+  "depends": [
+    "menuinst >=1.4.11,<2",
+    "pycosat >=0.6.3",
+    "pyopenssl >=16.2.0",
+    "python >=3.7,<3.8.0a0",
+    "requests >=2.18.4,<3",
+    "ruamel_yaml >=0.11.14,<0.16",
+    "setuptools >=31.0.1"
+  ],
+  "features": "",
+  "fn": "conda-4.6.14-py37_0.tar.bz2",
+  "license": "BSD 3-Clause",
+  "md5": "5c4d29f4ba9e9ca552a77dfa9c130920",
+  "name": "conda",
+  "size": 2228690,
+  "subdir": "win-64",
+  "timestamp": 1555533882384,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/conda-4.6.14-py37_0.tar.bz2",
+  "version": "4.6.14"
+}

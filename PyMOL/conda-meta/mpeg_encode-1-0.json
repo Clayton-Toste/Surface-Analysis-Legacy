@@ -1,0 +1,18 @@
+{
+  "arch": "x86_64",
+  "build": "0",
+  "build_number": 0,
+  "depends": [],
+  "files": [
+    "Library/bin/mpeg_encode.exe"
+  ],
+  "installed_by": "PyMOL-2.3.2-Windows-x86_64.exe",
+  "license": "BSD-like",
+  "link": null,
+  "md5": "c53591aeecb04fe948b7146652f3afe9",
+  "name": "mpeg_encode",
+  "platform": "win",
+  "subdir": "win-64",
+  "url": "https://conda.anaconda.org/schrodinger/win-64/mpeg_encode-1-0.tar.bz2",
+  "version": "1"
+}

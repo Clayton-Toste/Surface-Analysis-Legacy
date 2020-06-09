@@ -1,0 +1,9 @@
+#
+# only atoms involved in aromatic bonds
+# are considered to be matched here.
+#
+pattern                                             comment
+char                                                char
+#
+[#8X1-0]-[#6]-[#8X1-0]>>[#8X1;-]-[#6]=[#8X1]        # generate a carboxylate
+[#8X1-0]-[#7]-[#8X1-0]>>[#8X1;-]-[#7]=[#8X1]        # generate a nitro

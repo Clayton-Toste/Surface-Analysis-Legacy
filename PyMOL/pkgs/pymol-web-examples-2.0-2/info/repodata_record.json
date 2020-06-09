@@ -1,0 +1,19 @@
+{
+  "build": "2",
+  "build_number": 2,
+  "channel": "https://conda.anaconda.org/schrodinger/noarch",
+  "constrains": [],
+  "depends": [],
+  "features": "",
+  "fn": "pymol-web-examples-2.0-2.tar.bz2",
+  "license": "proprietary - Schrodinger",
+  "license_family": "Proprietary",
+  "md5": "4267e27a1c109008878a6d5481bbce8b",
+  "name": "pymol-web-examples",
+  "noarch": "generic",
+  "size": 1998302,
+  "subdir": "noarch",
+  "track_features": "",
+  "url": "https://conda.anaconda.org/schrodinger/noarch/pymol-web-examples-2.0-2.tar.bz2",
+  "version": "2.0"
+}

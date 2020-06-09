@@ -1,0 +1,42 @@
+{
+  "arch": "x86_64",
+  "build": "py37h343c172_0",
+  "build_number": 0,
+  "depends": [
+    "blas 1.0 mkl",
+    "mkl >=2019.1,<2020.0a0",
+    "numpy-base >=1.0.2,<2.0a0",
+    "python >=3.7,<3.8.0a0",
+    "vc >=14.1,<15.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/mkl_random-1.0.2-py3.7.egg-info/PKG-INFO",
+    "Lib/site-packages/mkl_random-1.0.2-py3.7.egg-info/SOURCES.txt",
+    "Lib/site-packages/mkl_random-1.0.2-py3.7.egg-info/dependency_links.txt",
+    "Lib/site-packages/mkl_random-1.0.2-py3.7.egg-info/requires.txt",
+    "Lib/site-packages/mkl_random-1.0.2-py3.7.egg-info/top_level.txt",
+    "Lib/site-packages/mkl_random/__init__.py",
+    "Lib/site-packages/mkl_random/__pycache__/__init__.cpython-37.pyc",
+    "Lib/site-packages/mkl_random/__pycache__/setup.cpython-37.pyc",
+    "Lib/site-packages/mkl_random/mkl_distributions.h",
+    "Lib/site-packages/mkl_random/mklrand.cp37-win_amd64.pyd",
+    "Lib/site-packages/mkl_random/randomkit.h",
+    "Lib/site-packages/mkl_random/setup.py",
+    "Lib/site-packages/mkl_random/tests/__init__.py",
+    "Lib/site-packages/mkl_random/tests/__pycache__/__init__.cpython-37.pyc",
+    "Lib/site-packages/mkl_random/tests/__pycache__/test_random.cpython-37.pyc",
+    "Lib/site-packages/mkl_random/tests/__pycache__/test_regression.cpython-37.pyc",
+    "Lib/site-packages/mkl_random/tests/test_random.py",
+    "Lib/site-packages/mkl_random/tests/test_regression.py"
+  ],
+  "installed_by": "PyMOL-2.3.2-Windows-x86_64.exe",
+  "license": "BSD 3-Clause",
+  "link": null,
+  "md5": "d45af154246685f482763506afd9cea0",
+  "name": "mkl_random",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1544742254418,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/mkl_random-1.0.2-py37h343c172_0.tar.bz2",
+  "version": "1.0.2"
+}

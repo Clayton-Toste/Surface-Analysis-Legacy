@@ -1,0 +1,27 @@
+{
+  "arch": "x86_64",
+  "build": "py37_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.7,<3.8.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/__pycache__/win_inet_pton.cpython-37.pyc",
+    "Lib/site-packages/win_inet_pton-1.1.0-py3.7.egg-info/PKG-INFO",
+    "Lib/site-packages/win_inet_pton-1.1.0-py3.7.egg-info/SOURCES.txt",
+    "Lib/site-packages/win_inet_pton-1.1.0-py3.7.egg-info/dependency_links.txt",
+    "Lib/site-packages/win_inet_pton-1.1.0-py3.7.egg-info/installed-files.txt",
+    "Lib/site-packages/win_inet_pton-1.1.0-py3.7.egg-info/top_level.txt",
+    "Lib/site-packages/win_inet_pton.py"
+  ],
+  "installed_by": "PyMOL-2.3.2-Windows-x86_64.exe",
+  "license": "PUBLIC-DOMAIN",
+  "link": null,
+  "md5": "4ec69295c06d6bb5d7735b98ecb393e6",
+  "name": "win_inet_pton",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1551195764254,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/win_inet_pton-1.1.0-py37_0.tar.bz2",
+  "version": "1.1.0"
+}

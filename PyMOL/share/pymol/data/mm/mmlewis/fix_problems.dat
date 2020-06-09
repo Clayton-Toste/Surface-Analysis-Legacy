@@ -1,0 +1,33 @@
+#
+# At this point there is a lewis structure which might 
+# have some defects which are corrected here.
+# Since this lewis structure might also be a united atom
+# model the patterns must be carefully chosen.
+#
+# IMPORTANT: Do NOT use 'v' valence or 'H' count specifications 
+# in patterns in this file. They are not supported in this file 
+# when mmlewis runs in non-default mode ifo 4 or 6, as in the 
+# uses by mmmdl (ifo 6) and mmmol2 (ifo 4).
+#
+pattern                                                        comment
+char                                                           char
+#
+[CX4+]=[CX3][NX3+0]>>[CX4+0]-[CX3]=[NX3+]                      # jag_pka specific problem; fix for general mmlewis SHARED-2000
+[CX4+]=[CX3]>>[CX4+0]-[CX3+]                                   # jag_pka specific problem SHARED-2000
+#
+[#8X1-0]-[#6X3]-[#8X1-0]>>[#8X1;-]-[#6X3]=[#8X1]               # carboxylate group without formal charges
+[#8X1+1]=[#6X3]-[#8;X1,H]>>[#8X1;+0]=[#6X3]-[#8;X1,H]          # carboxyl group with a positive charge on oxygen
+[#8X1]=[#7X3]=[#8X1]>>[#8X1;-]-[#7X3;+]=[#8X1;-0]              # nitro group
+[#8X1]-[#7X3]-,=[#8X1]>>[#8X1;-]-[#7X3;+]=[#8X1;-0]            # nitro group Ev:87844
+[#8X1]-,=[#16X4](-,=[#8X1])(-[*])-[*]>>[#8X1;-0]=[#16X4;+0](=[#8X1;-0])(-[*])-[*]  # sulfone, sulfonamide Ev:87844
+[#7X3-0](=[*])(-[*])-,=[#8X1-0]>>[#7X3+](=[*])(-[*])-[#8X1-]   # fix unsaturated N-oxides  
+# boronate
+[BX4-0]-[PX4-0](-[*])(-[*])-[*]>>[BX4-]-[PX4+](-[*])(-[*])-[*]  # n1000.mae SAHJOA
+[OX2](-[BX4-0])-[PX4](-[*])(-[*])-[*]>>[OX2+](-[BX4-])=[PX4](-[*])(-[*])-[*]  # tBX4.70.mae QOMKIM
+[PX4](-[OX2-0]-[BX4-0])(-[*])(-[*])-[*]>>[PX4](=[OX2+]-[BX4-])(-[*])(-[*])-[*]  # tBX4.72.mae RISRUG
+[OX2](-[BX4])=[CX3]>>[OX2+](-[BX4-])=[CX3]                     # BX4.36.mae:  IBENOS
+[OX2](-[BX4])=[SX3]>>[OX2+](-[BX4-])=[SX3]                     # BX4.32.mae:  HUYREY
+[#6X3+0](-[OX2+0]-[BX4-]1)-[#6X3+]-[#6X3+0]-[OX2+0]1>>[#6X3+0](-[OX2+0]-[BX4-]1)=[#6X3+0]-[#6X3+0]=[OX2+]1                                                        # BX4.16.mae:   DUDJOB
+[#6X3+0](-[OX2+0]-[BX4-0]1)-[#6X3+0]-[#6X3+0]-[OX2+0]1>>[#6X3+0](-[OX2+0]-[BX4-]1)=[#6X3+0]-[#6X3+0]=[OX2+]1   # BX4.35.mae:  IBENIM
+[#6X3+0](-[OX2+0]-[BX4+0])-[OX2+0]-[BX4]-[OX2]>>[#6X3+0](=[OX2+]-[BX4-])-[OX2+0]-[BX4]-[OX2]  # BX4.98.mae:  VUSJOI and BX4.83.mae: TACETB
+[#7X2+0]#C-[BX4+0]>>[#7X2+]#C-[BX4-]    # BX4.112.mae:  ZUXKOS

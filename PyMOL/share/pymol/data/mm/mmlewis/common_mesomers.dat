@@ -1,0 +1,28 @@
+#
+# at this point in the mmlewis procedure there is a lewis structure which might not
+# full fill the octet rule or which could be written in a better 
+# mesomeric form. This is done with the following list of transformations.
+#
+pattern                                                               comment
+char                                                                  char
+#
+[CX4+]=[CX3][NX3+0]>>[CX4+0]-[CX3]=[NX3+]                             # jag_pka specific problem; fix for general mmlewis SHARED-2000
+[CX4+]=[CX3]>>[CX4+0]-[CX3+]                                          # jag_pka specific problem SHARED-2000
+#
+[#8X1-]-[#6X3]=[#7X2]-[#6X3]=[#8]>>[#8X1;-0]=[#6X3]-[#7X2-]-[#6X3]=[#8]  #  N anion in succinimide
+[NX3](=O)=O>>[NX3;+](-[O-])=[O]                                       # Nitro group
+[NX3;+1;H1]=[CX3](-[NX3;+0;H2])-[NX3;+0;H2]>>[NX3+0;H1]-[CX3](-[NX3;+0;H2])=[NX3;+1;H2]  # guanidine mesomers         
+[NX2+0]=[CX3]-[OX1-]>>[NX2-]-[CX3]=[OX1-0]                              # amid resonance
+[NX3+]=[CX3]-[OX1-]>>[NX3+0]-[CX3]=[O-0]                              # amid resonance
+#
+[NX3+]=[CX3]-[CX3]1=[CX3](-[OX1-])[CX3,NX2]=[NX2,CX3][CX3,NX2]=[CX3,NX2]1>>[NX3+]=[CX3]-[CX3]1=[CX3](-[OX1-])[CX3,NX2]=[NX2,CX3][CX3,NX2]=[CX3,NX2]1  # SHARED-2707 for 6-membered ring
+[NX3+]=[CX3]-[CX3]1=[CX3](-[OX1-])[OX2,NX3v3,SX2][CX3,NX2]=[CX3,NX2]1>>[NX3+]=[CX3]-[CX3]1=[CX3](-[OX1-])[OX2,NX3v3,SX2][CX3,NX2]=[CX3,NX2]1  # SHARED-2707 for 5-membered ring
+[NX3+]=[CX3]-[CX3]=[CX3]-[OX1-]>>[NX3+0]-[CX3]=[CX3]-[CX3]=[O-0]      # vinyloge amid resonance
+#
+[NX3+]=[CX3]-[NX3+0]-[OX1-]>>[NX3+0]-[CX3]=[NX3+1]-[OX1-]             # N-oxide mesomer
+[NX2-]-[CX3]=[NX3+]>>[NX2-0]=[CX3]-[NX3+0]                            # rearrange zwitter ionic form
+[NX2-]-[CX3]=[CX3]-[CX3]=[NX3+](~[-0])(~[-0])[-0]>>[NX2-0]=[CX3]-[CX3]=[CX3]-[NX3+0](~[-0])(~[-0])[-0]  # rearrange zwitter ionic form (see also SHARED-3687)
+[NX3+]=[CX3]-[NX3+]=[CX3]-[NX3+0]>>[NX3+]=[CX3]-[NX3;+0]-[CX3]=[NX3+]    # rearrange amidine fragments
+#[NX3+]=[CX3]-[NX3+0]-[CX3](=[!X1])-[NX3+0]>>[NX3+0]-[CX3]=[NX3;+]-[CX3](=[!X1])-[NX3+0]    # rearrange amidine fragments
+[NX3]1=[NX3]-[CX3]=[CX3]-[CX3]=[CX3]-1>>[NX3]1-[NX3]=[CX3]-[CX3]=[CX3]-[CX3]=1  # rearrange amidine fragments
+[NX1]#[NX2]-[NX2]>>[NX1-]=[NX2+]=[NX2+0]                          # azides need to be properly written

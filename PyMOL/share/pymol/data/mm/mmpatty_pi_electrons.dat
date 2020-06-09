@@ -1,0 +1,86 @@
+#
+#  assign the number of electrons each ring atom contributes
+#  to the pi-system:
+#  InRing = 1 means apply rule only for atoms in rings
+#    InRing = 0 means apply rule only for atoms outside of rings
+#  Arom_pi is special and should only be used to determine aromaticity.
+#  Npi is used to number of electrons of the matched atom.
+#  ExoBO is the bond order of the exocyclic bond which is tested outside the list of SMARTS below
+# 
+#      Val is the sum of the bond orders
+#      An is the atomic number of the first atom in the SMARTS
+#      Fo is the formal charge
+#      Xn is the total number of bonds
+#
+ InRing   Arom_pi   Npi    ExoBO    pattern                           comment
+   int      int     int    int      char                              char
+# 
+    1      -1000     0     -1       [#6;X4]                         # non-aromatic atom
+    1      -1000     0     -1       [#6;X2](-[*])-[*]               # ua non-aromatic atom
+    1      -1000     0     -1       [#16;X4](~[#8X1])~[#8X1]        # sulfones
+    1      -1000     1      2       [#6;X3]=[#6;X3]                 # exocyclic C=C 
+    1      -1000     1      2       [#6;X3]=[#6;X1,X2]              # ua exocyclic C=C 
+    1       0        1      2       [#6;X3]=[#8X1,#16X1,#7]         # exocyclic C=X bond with X=O,S,N
+    1       1        1     -1       [#6;X3;-0](=[*])-[*]            # C= bond in ring 
+    1       2        2     -1       [#6;X3;-](=[*])-[*]             # C= bond in ring 
+    1       2        2     -1       [#6;X3;-](-[*])(-[*])-[*]       # carbanion 
+    1       1        1     -1       [#6;X2;-0](=[*])-[*]            # ua C= bond in ring 
+    1       1        2     -1       [#6;X2;-](=[*])-[*]             # aa/ua C= sigma anion bond in ring 
+    1       2        2     -1       [#6;X2;-](-[*])-[*]             # ua carbanion
+    1       1        1     -1       [#7;X2](=[*])-[*]               # N= bond in ring
+    1       1        1     -1       [#7;X2+](=[*])-[*]              # ua for aa model [NX3+]
+    1       2        2     -1       [#7;X2;+0](-[*])-[*]            # ua for aa model [NX3] 
+    1       2        2     -1       [#7;X2](-[*])-[*]               # ua for pyrrol
+    1       2        2     -1       [#7;X2;-]                       # tetrazole anion 
+    1       1        1     -1       [#7;X2]                         # N= bond in ring
+    1       2        2     -1       [#7;X3v3+0]                     # pyrrol
+    1       1        1     -1       [#7;X3;+]                       # pyridinium pyridine-N-oxide 
+    1       1        1     -1       [#8;X2+](=[*])-[*]              # flavylium analoge
+    1       2        2     -1       [#8;X2+0](-[*])-[*]             # furan
+    1       2        2     -1       [#16;X2](-[*])-[*]              # thiazole
+#    1       0        0     -1       [#5](-[*])-[*]                  # boron
+    1       2        2     -1       [#34;X2]                        # seleno furan
+
+##########################################################################
+# Next section is for use outside of rings, thus having no effect on 
+# aromaticity determination. This enables use of the Npi property to flag 
+# conjugated bonds outside of aromatic rings.
+#
+# Patterns below should work for both non-UA and UA representations. The 
+# pattern order is crucial. 
+#
+# Npi values > 0 below are deliberately fake, for now. Fake value 3 can 
+# distinguish these matches from those due to the ring patterns above, if 
+# necessary. Application using these non-ring Npi values should merely 
+# check whether Npi == 0 or > 0, for now.
+#
+#InRing   Arom_pi     Npi    ExoBO    pattern               comment
+#  int      int       int    int      char                  char
+# 
+    0      -1000       3     -1       [#6;+0]#[*]         # 
+    0      -1000       0     -1       [#6;+0](=[*])=[*]   # allene conj is local
+    0      -1000       3     -1       [#6;+0]=[*]         # 
+    0      -1000       0     -1       [#6;+0]             # sp3 
+    0      -1000       3     -1       [#6;-1]#[*]         # terminal
+    0      -1000       3     -1       [#6;-1]=[*]         # 
+    0      -1000       3     -1       [#6;-1]             # 
+#
+    0      -1000       3     -1       [#7;+1]#[*]         # 
+    0      -1000       0     -1       [#7;+1](=[*])=[*]   # conj is local
+    0      -1000       3     -1       [#7;+1]=[*]         # 
+    0      -1000       0     -1       [#7;+1]             # sp3 
+    0      -1000       3     -1       [#7;+0]#[*]         # terminal
+    0      -1000       3     -1       [#7;+0]=[*]         # 
+    0      -1000       3     -1       [#7;+0]             # 
+    0      -1000       3     -1       [#7;-1]=[*]         # terminal
+    0      -1000       3     -1       [#7;-1]             # 
+#
+    0      -1000       3     -1       [#8;+0]=[*]         # terminal
+    0      -1000       3     -1       [#8;+0]             # 
+    0      -1000       3     -1       [#8;-1]             # terminal
+#
+# For S, we have to avoid matching the higher connectivity forms
+    0      -1000       3     -1       [#16;+0;X1]=[*]     # terminal
+    0      -1000       3     -1       [#16;+0;!X4;!X3]    # 
+    0      -1000       3     -1       [#16;-1;X1]         # terminal
+

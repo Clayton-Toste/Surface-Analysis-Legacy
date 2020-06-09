@@ -1,0 +1,26 @@
+{
+  "arch": "x86_64",
+  "build": "py37h19fb1c0_0",
+  "build_number": 0,
+  "depends": [
+    "blas 1.0 mkl",
+    "icc_rt >=2019.0.0",
+    "mkl >=2019.3,<2020.0a0",
+    "mkl_fft >=1.0.6,<2.0a0",
+    "mkl_random >=1.0.2,<2.0a0",
+    "numpy-base 1.16.4 py37hc3f5095_0",
+    "python >=3.7,<3.8.0a0",
+    "vc >=14.1,<15.0a0"
+  ],
+  "files": [],
+  "installed_by": "PyMOL-2.3.2-Windows-x86_64.exe",
+  "license": "BSD 3-Clause",
+  "link": null,
+  "md5": "298f0baa621f915920d4d1fe92d61590",
+  "name": "numpy",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1559141435570,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/numpy-1.16.4-py37h19fb1c0_0.tar.bz2",
+  "version": "1.16.4"
+}

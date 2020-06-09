@@ -1,0 +1,10 @@
+#
+# if an atom has an unhappy valence and matches
+# one of the following patterns it will be
+# excluded from the search of possible mesomers
+#
+pattern              label comment
+char                char  char
+#
+[OX1]-[SX4]=[OX1]  !!!   # sulfate
+[OX1]-[PX4]=[OX1]  !!!   # phosphate

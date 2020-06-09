@@ -1,0 +1,32 @@
+{
+  "arch": "x86_64",
+  "build": "h0cc432a_1",
+  "build_number": 1,
+  "depends": [],
+  "files": [
+    "Library/bin/1033/ifcore_msg.dll",
+    "Library/bin/1033/irc_msg.dll",
+    "Library/bin/1033/libmUI.dll",
+    "Library/bin/cilkrts20.dll",
+    "Library/bin/ifdlg100.dll",
+    "Library/bin/libchkp.dll",
+    "Library/bin/libicaf.dll",
+    "Library/bin/libifcoremd.dll",
+    "Library/bin/libifcorert.dll",
+    "Library/bin/libifportmd.dll",
+    "Library/bin/libirngmd.dll",
+    "Library/bin/libmmd.dll",
+    "Library/bin/libmpx.dll",
+    "Library/bin/svml_dispmd.dll"
+  ],
+  "installed_by": "PyMOL-2.3.2-Windows-x86_64.exe",
+  "license": "Intel proprietary",
+  "link": null,
+  "md5": "ce2949c239b5cd45848a0a7865d30520",
+  "name": "icc_rt",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1545006766605,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/icc_rt-2019.0.0-h0cc432a_1.tar.bz2",
+  "version": "2019.0.0"
+}

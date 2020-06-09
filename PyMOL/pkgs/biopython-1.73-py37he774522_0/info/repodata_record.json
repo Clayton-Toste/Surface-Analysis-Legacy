@@ -1,0 +1,22 @@
+{
+  "build": "py37he774522_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "numpy",
+    "python >=3.7,<3.8.0a0",
+    "vc >=14.1,<15.0a0"
+  ],
+  "features": "",
+  "fn": "biopython-1.73-py37he774522_0.tar.bz2",
+  "license": "Biopython License Agreement",
+  "md5": "1748806f1ff3d65e5c51b396faf5e038",
+  "name": "biopython",
+  "size": 2574139,
+  "subdir": "win-64",
+  "timestamp": 1556062915956,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/biopython-1.73-py37he774522_0.tar.bz2",
+  "version": "1.73"
+}

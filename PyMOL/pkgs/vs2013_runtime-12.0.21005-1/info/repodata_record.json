@@ -1,0 +1,18 @@
+{
+  "build": "1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [],
+  "features": "",
+  "fn": "vs2013_runtime-12.0.21005-1.tar.bz2",
+  "license": "Proprietary",
+  "md5": "fc71f16dbab3acbc27ec911e506dcbd3",
+  "name": "vs2013_runtime",
+  "size": 1563977,
+  "subdir": "win-64",
+  "timestamp": 1536500868733,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/vs2013_runtime-12.0.21005-1.tar.bz2",
+  "version": "12.0.21005"
+}

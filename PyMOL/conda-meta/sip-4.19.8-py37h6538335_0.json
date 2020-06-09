@@ -1,0 +1,29 @@
+{
+  "arch": "x86_64",
+  "build": "py37h6538335_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.7,<3.8.0a0",
+    "vc 14.*"
+  ],
+  "files": [
+    "Lib/site-packages/__pycache__/sipconfig.cpython-37.pyc",
+    "Lib/site-packages/__pycache__/sipdistutils.cpython-37.pyc",
+    "Lib/site-packages/sip.pyd",
+    "Lib/site-packages/sip.pyi",
+    "Lib/site-packages/sipconfig.py",
+    "Lib/site-packages/sipdistutils.py",
+    "Library/bin/sip.exe",
+    "include/sip.h"
+  ],
+  "installed_by": "PyMOL-2.3.2-Windows-x86_64.exe",
+  "license": "GPL-3.0",
+  "link": null,
+  "md5": "bc320ab7c6c8c8562913a06c5646aaa5",
+  "name": "sip",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1533137980121,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/sip-4.19.8-py37h6538335_0.tar.bz2",
+  "version": "4.19.8"
+}

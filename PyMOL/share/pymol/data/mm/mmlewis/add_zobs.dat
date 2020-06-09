@@ -1,0 +1,25 @@
+
+########################################################################
+# Copyright 2007-2010 Schrodinger, LLC. All rights reserved. 
+# Installed data file for mmlewis_add_zobs() function
+########################################################################
+
+# Scale factor for maximum length of zero-order bond to metal
+SCALE_SUM_COV_RADII  1.2
+
+# Scale factor for minimum length of zero-order bond to metal
+SCALE_SUM_COV_RADII_MIN  0.5 
+
+# List of elements to treat as non-metals; all other elements will be 
+# treated as metals, and will be candidates for addition of ZOBs
+
+NON_METALS  H B C N O F Si P S Cl As Se Br I
+
+########################################################################
+# Override default max ZOB length for specific element pairs
+
+# For EV 104441
+ELEM_PAIR_RANGE  Ca  O  0.835  2.975
+
+ELEM_PAIR_RANGE  Mg  O  0.890  3.073
+

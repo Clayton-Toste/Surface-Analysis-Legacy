@@ -1,0 +1,16 @@
+{
+  "arch": "x86_64",
+  "build": "mkl",
+  "build_number": 1,
+  "depends": [],
+  "files": [],
+  "installed_by": "PyMOL-2.3.2-Windows-x86_64.exe",
+  "link": null,
+  "md5": "e8aa6b7daaf0925245c148aaeaa0722e",
+  "name": "blas",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1528122357636,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/blas-1.0-mkl.tar.bz2",
+  "version": "1.0"
+}

@@ -1,0 +1,18 @@
+{
+  "arch": "x86_64",
+  "build": "1",
+  "build_number": 1,
+  "depends": [],
+  "files": [
+    "Library/bin/mtz2ccp4_px.exe"
+  ],
+  "installed_by": "PyMOL-2.3.2-Windows-x86_64.exe",
+  "license": "Schrodinger Proprietary",
+  "link": null,
+  "md5": "a4383b328d1c53a7ac7cab4305bb2e70",
+  "name": "mtz2ccp4_px",
+  "platform": "win",
+  "subdir": "win-64",
+  "url": "https://conda.anaconda.org/schrodinger/win-64/mtz2ccp4_px-1.0-1.tar.bz2",
+  "version": "1.0"
+}

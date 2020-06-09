@@ -1,0 +1,32 @@
+{
+  "arch": "x86_64",
+  "build": "py37_1",
+  "build_number": 1,
+  "depends": [
+    "apbs",
+    "mengine",
+    "mpeg_encode",
+    "pdb2pqr",
+    "python >=3.7,<3.8.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/freemol-1.158-py3.7.egg-info",
+    "Lib/site-packages/freemol/__init__.py",
+    "Lib/site-packages/freemol/__pycache__/__init__.cpython-37.pyc",
+    "Lib/site-packages/freemol/__pycache__/apbs.cpython-37.pyc",
+    "Lib/site-packages/freemol/__pycache__/mengine.cpython-37.pyc",
+    "Lib/site-packages/freemol/__pycache__/mpeg_encode.cpython-37.pyc",
+    "Lib/site-packages/freemol/apbs.py",
+    "Lib/site-packages/freemol/mengine.py",
+    "Lib/site-packages/freemol/mpeg_encode.py"
+  ],
+  "installed_by": "PyMOL-2.3.2-Windows-x86_64.exe",
+  "link": null,
+  "md5": "1ee42a40adc98d49925c595982f440e9",
+  "name": "freemol",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1533119750775,
+  "url": "https://conda.anaconda.org/schrodinger/win-64/freemol-1.158-py37_1.tar.bz2",
+  "version": "1.158"
+}

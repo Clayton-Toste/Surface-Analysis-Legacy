@@ -1,0 +1,21 @@
+{
+  "build": "py_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/schrodinger/noarch",
+  "constrains": [],
+  "depends": [
+    "python"
+  ],
+  "features": "",
+  "fn": "pymol-web-legacy-2.0-py_1.tar.bz2",
+  "license": "proprietary - Schrodinger",
+  "license_family": "Proprietary",
+  "md5": "b73e3cd531bd91866f1297788a8665f1",
+  "name": "pymol-web-legacy",
+  "noarch": "python",
+  "size": 2583,
+  "subdir": "noarch",
+  "track_features": "",
+  "url": "https://conda.anaconda.org/schrodinger/noarch/pymol-web-legacy-2.0-py_1.tar.bz2",
+  "version": "2.0"
+}

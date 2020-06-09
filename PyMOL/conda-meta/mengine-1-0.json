@@ -1,0 +1,18 @@
+{
+  "arch": "x86_64",
+  "build": "0",
+  "build_number": 0,
+  "depends": [],
+  "files": [
+    "Library/bin/mengine.exe"
+  ],
+  "installed_by": "PyMOL-2.3.2-Windows-x86_64.exe",
+  "license": "Apache 2.0",
+  "link": null,
+  "md5": "530c0e49f31ad8cb643cee5d8a73ae01",
+  "name": "mengine",
+  "platform": "win",
+  "subdir": "win-64",
+  "url": "https://conda.anaconda.org/schrodinger/win-64/mengine-1-0.tar.bz2",
+  "version": "1"
+}

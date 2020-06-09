@@ -1,0 +1,26 @@
+{
+  "arch": "x86_64",
+  "build": "1",
+  "build_number": 1,
+  "depends": [],
+  "files": [
+    "Library/bin/msvcp120.dll",
+    "Library/bin/msvcr120.dll",
+    "Library/bin/vccorlib120.dll",
+    "Library/bin/vcomp120.dll",
+    "msvcp120.dll",
+    "msvcr120.dll",
+    "vccorlib120.dll",
+    "vcomp120.dll"
+  ],
+  "installed_by": "PyMOL-2.3.2-Windows-x86_64.exe",
+  "license": "Proprietary",
+  "link": null,
+  "md5": "fc71f16dbab3acbc27ec911e506dcbd3",
+  "name": "vs2013_runtime",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1536500868733,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/vs2013_runtime-12.0.21005-1.tar.bz2",
+  "version": "12.0.21005"
+}

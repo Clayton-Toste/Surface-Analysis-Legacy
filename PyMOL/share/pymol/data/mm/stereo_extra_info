@@ -1,0 +1,726 @@
+# Copyright, Schrodinger, LLC.
+# All Rights Reserved
+
+name: Stereo restrictions file
+
+chiral_pattern{
+# 
+#     1 - 2
+#   /       \
+#  6 -  7  - 3
+#   \       /
+#     5 - 4
+# 
+    Sch_ID: 1
+    name: norbornane
+    pattern: [#6-0,#7-0,#7+1,#8-0,#16-0]1~[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4]2[#6-0,#7-0,#7+1,#8-0,#16-0]~[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4]1[#6-0,#7-0,#7+1,#8-0,#16-0]2
+    geoms:    3 -1    6 1
+    class: 1
+    reflect: 1
+}
+
+chiral_pattern{
+# 
+#     1  -  2
+#          / 
+#   /     9   \
+#         /
+#  6 -7- 8      3
+#         \
+#   \     10  /
+#          \
+#     5  -  4
+# 
+    Sch_ID: 2
+    name: adamantane
+    pattern: [#6-0,#7-0,#7+1,#8-0,#16-0]1[C-0X4]2[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4]3[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4]1[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4]([#6-0,#7-0,#7+1,#8-0,#16-0]2)[#6-0,#7-0,#7+1,#8-0,#16-0]3
+    geoms:    2 1    4 1    6 -1    8 1
+    class: 1
+    reflect: 1
+}
+
+chiral_pattern{
+# 
+#     1 - 2
+#     |     \
+#     | 4  - 3
+#     |  \  /
+#     6 - 5
+# 
+    Sch_ID: 3
+    name: C5_O
+    pattern: [#6-0,#7-0,#7+1,#8-0,#16-0]~1~[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4]2[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4]2[#6-0,#7-0,#7+1,#8-0,#16-0]~1
+    geoms:    3 -1    5 -1
+    class: 1
+    reflect: 1
+}
+
+chiral_pattern{
+#       1 
+#    /     \
+#  8         2
+#  |         |
+#  7 -  9  - 3
+#  |         |
+#  6         4
+#    \     /
+#       5
+    Sch_ID: 4
+    name: 331-bicyclononane
+    pattern: [#6-0,#7-0,#7+1,#8-0,#16-0]~1~[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4]2[#6-0,#7-0,#7+1,#8-0,#16-0]~[#6-0,#7-0,#7+1,#8-0,#16-0]~[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4]([#6-0,#7-0,#7+1,#8-0,#16-0]~1)[#6-0,#7-0,#7+1,#8-0,#16-0]2
+    geoms:    3 1    7 1
+    class: 1
+    reflect: 1
+}
+
+chiral_pattern{
+#       1 
+#    /     \
+#  7         2
+#  |         |
+#  6 -  9  - 3
+#  |         |
+#  5 -  -  - 4
+#       
+    Sch_ID: 5
+    name: 321-bicyclooctane
+    pattern: [#6-0,#7-0,#7+1,#8-0,#16-0]~1~[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4]2[#6-0,#7-0,#7+1,#8-0,#16-0]~[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4]([#6-0,#7-0,#7+1,#8-0,#16-0]~1)[#6-0,#7-0,#7+1,#8-0,#16-0]2
+    geoms:    3 -1    6 -1
+    class: 1
+    reflect: 1
+}
+
+chiral_pattern{
+# 
+#     1 - 2
+#   /       \
+#  7    5    3
+#   \  / \  /
+#     6 - 4
+# 
+    Sch_ID: 6
+    name: 14-bicyclohept-1,4-dione
+    pattern: [#6-0,#7-0,#7+1,#8-0,#16-0]-1~[#6-0,#7-0,#7+1,#8-0,#16-0]-[C-0X3]-[C-0X4]2[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4]2-[C-0X3]-1
+    geoms:    4 1    6 1
+    class: 1
+    reflect: 1
+}
+
+chiral_pattern{
+#       N2
+#     /   \
+#  =C1     C3=
+#    \     /
+#    C10- C4
+#   /       \
+# C7 -  6  - C5
+#   \       /
+#     8 - 9
+# 
+    Sch_ID: 7
+    name: misc_1
+    pattern: [C-0X3]-1-[N-0X3]-[C-0X3]-[C-0X4]-2-[C-0X4]-3-[#6-0,#7-0,#7+1,#8-0,#16-0]-[C-0X4](-[#6-0,#7-0,#7+1,#8-0,#16-0]~[#6-0,#7-0,#7+1,#8-0,#16-0]-3)-[C-0X4]-1-2
+    geoms:    4 1    10 1 
+    class: 1
+    reflect: 1
+}
+
+chiral_pattern{
+# 
+#     1 - 2
+#   /       \
+#  6 -7 - 8- 3
+#   \       /
+#     5 - 4
+# 
+    Sch_ID: 8
+    name: 2,2,2-bicyclooctane
+    pattern: [#6-0,#7-0,#7+1,#8-0,#16-0]1~[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4,N+1X4]2[#6-0,#7-0,#7+1,#8-0,#16-0]~[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4,N+1X4]1[#6-0,#7-0,#7+1,#8-0,#16-0]~[#6-0,#7-0,#7+1,#8-0,#16-0]2
+    geoms:    3 1    6 -1
+    class: 1
+    reflect: 1
+}
+
+
+chiral_pattern{
+#       1
+#      / \
+#     8   2
+#   /       \
+#  7 -9 -10- 3
+#   \       /
+#     6   4
+#      \ /
+#       5
+    Sch_ID: 9
+    name: 2,3,3-bicyclodecane
+    pattern: [#6-0,#7-0,#7+1,#8-0,#16-0]~1~[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4,N+1X4]2[#6-0,#7-0,#7+1,#8-0,#16-0]~[#6-0,#7-0,#7+1,#8-0,#16-0]~[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4,N+1X4]([#6-0,#7-0,#7+1,#8-0,#16-0]1)[#6-0,#7-0,#7+1,#8-0,#16-0]~[#6-0,#7-0,#7+1,#8-0,#16-0]2
+    geoms:    3 -1    7 1
+    class: 1
+    reflect: 1
+}
+
+
+chiral_pattern{
+#       1
+#      / \
+#     7   2
+#   /       \
+#  6 -8 - 9- 3
+#   \       /
+#     5 - 4
+    Sch_ID: 10
+    name: 2,2,3-bicyclononane
+    pattern: [#6-0,#7-0,#7+1,#8-0,#16-0]~1~[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4,N+1X4]2[#6-0,#7-0,#7+1,#8-0,#16-0]~[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4,N+1X4]([#6-0,#7-0,#7+1,#8-0,#16-0]~1)[#6-0,#7-0,#7+1,#8-0,#16-0]~[#6-0,#7-0,#7+1,#8-0,#16-0]2
+    geoms:    3 1    6 1
+    class: 1
+    reflect: 1
+}
+
+chiral_pattern{
+# 
+#     1 - 2
+#   /       \
+#  6    7  - 3
+#   \  /    /
+#     5 - 4
+# 
+    Sch_ID: 11
+    name: 1,1,3-bicycloheptane
+    pattern: [#6-0,#7-0,#7+1,#8-0,#16-0]~1~[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4,N+1X4]2[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4,N+1X4]([#6-0,#7-0,#7+1,#8-0,#16-0]~1)[#6-0,#7-0,#7+1,#8-0,#16-0]2
+    geoms:    3 -1    5 -1
+    class: 1
+    reflect: 1
+}
+
+
+chiral_pattern{
+#       N9
+#     /   \
+#  =C8     C10=
+#    \     /
+#    C7 - C11
+#   /       \
+# C6- 5 - 4 -C3
+#   \       /
+#     1 - 2
+#
+
+    Sch_ID: 12
+    name: misc_2
+    pattern: [#6-0,#7-0,#7+1,#8-0,#16-0]1~[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4,N+1X4]2[#6-0,#7-0,#7+1,#8-0,#16-0]~[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4,N+1X4]1[C-0X4,N+1X4]1[C-0X3,N-OX3]~[C-OX3,N-0X3]~[C-0X3,N-OX3][C-0X4,N+1X4]12
+    geoms:   7 -1    11 -1
+    class: 1
+    reflect: 1
+}
+
+chiral_pattern{
+#       2
+#     / | \
+#    1  |  3
+#    \  |  /
+#    12 - 4
+#   /   |   \
+# 11    |    5
+#   \   |   /
+#    10 - 6
+#    /  |  \
+#   9   |   7 
+#    \  |  /
+#       8
+#
+    Sch_ID: 13
+    name: misc_3
+    pattern: [#6-0,#7-0,#7+1,#8-0,#16-0]1[C-0X4,N+1X4]2[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4,N+1X4]3[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4,N+1X4]4[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4,N+1X4]2[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4,N+1X4]4[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4,N+1X4]13
+    geoms:    2 1    4 -1    6 -1    8 1    10 -1    12 -1 
+    class: 1
+    reflect: 1
+}
+
+chiral_pattern{
+#       5 
+#    / /   \
+#  6  10--9  4
+#  |     /   |
+#  7 -  8  - 3
+#  |         |
+#  1 -  -  - 2
+#       
+    Sch_ID: 14
+    name: misc_4
+    pattern: [#6-0,#7-0,#7+1,#8-0,#16-0]1~[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4,N+1X4]2[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4,N+1X4]3[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4,N+1X4]1[C-0X4,N+1X4]2[#6-0,#7-0,#7+1,#8-0,#16-0]~[#6-0,#7-0,#7+1,#8-0,#16-0]3
+    geoms:    3 1    5 1    7 -1    8 -1
+    class: 1
+    reflect: 1
+}
+
+chiral_pattern{
+#Enforce L-alpha amino acid conformations
+    Sch_ID: 15
+    name: L-alpha_amino_acids
+    pattern: [NX3]-[CX4](-[#1])(-[CX4])-[CX3](=[OX1])-[#7,#8]
+    geoms:    2 -1
+    class: 3
+    reflect: 0
+    retain_orig: 1
+}
+
+chiral_pattern{
+#       16
+#     /   \
+#   17     15
+#    \     /
+#    13 - 14
+#   /       \
+#  12        8 - 7
+#   \       /      \
+#    11 - 9         6
+#          \       /
+#           10 - 5
+#          /       \
+#         1         4
+#          \       /
+#            2 - 3
+    Sch_ID: 16
+    name: steroid_framework_8_9_10_13
+#   pattern: 1              2            3            4               5             6            7           8      9       10        11            12           13      14             15         16           17
+    pattern: [C;-0;X4,X3]1~[C;-0;X4,X3]~[C;-0;X4,X3]~[C;-0;R1;X4,X3]~[C;-0;X4,X3]2~[C;-0;X4,X3]~[C;-0;X4,X3][C-0X4]3[C-0X4]([C-0X4]12)[C;-0;X4,X3]~[C;-0;X4,X3][C-0X4]1[C;-0;X4]3~[C;-0;X4,X3]~[C;-0;X4,X3]~[C;-0;X4,X3]1
+    geoms:    8  1  9 -1    10  -1    13  -1 
+# ring attachments forbidden at atom #4
+    reflect: 0
+    retain_orig: 1
+    class: 2
+}
+
+chiral_pattern{
+#       16
+#     /   \
+#   17     15
+#    \     /
+#    13 - 14
+#   /       \
+#  12        8 - 7
+#   \       /      \
+#    11 - 9         6
+#          \       /
+#          *10 - 5
+#          /       \
+#         1         4
+#          \       /
+#            2 - 3
+#
+# * - means this atom is unsaturated and thus not chiral
+    Sch_ID: 17
+    name: steroid_framework_8_9_13_unsaturated_10
+#   pattern:  1              2             3             4                5              6            7           8      9       10        11            12           13      14             15         16           17
+    pattern: [#6;-0;X4,X3]~1~[#6;-0;X4,X3]~[#6;-0;X4,X3]~[#6;-0;R1;X4,X3]~[#6;-0;X4,X3]~2~[C;-0;X4,X3]~[C;-0;X4,X3][C-0X4]3[C-0X4]([#6-0X3]~1~2)[C;-0;X4,X3]~[C;-0;X4,X3][C-0X4]1[C;-0;X4,X3]3~[C;-0;X4,X3]~[C;-0;X4,X3]~[C;-0;X4,X3]1
+    geoms:    8  1  9 -1  13  -1
+    reflect: 0
+    retain_orig: 1
+    class: 2
+# ring attachments forbidden at atom #4
+}
+
+
+chiral_pattern{
+#       16
+#     /   \
+#   17     15
+#    \     /
+#    13 - 14
+#   /       \
+#  12        8 - 7
+#   \       /      \
+#    11 - 9*        6
+#          \       /
+#           10 - 5
+#          /       \
+#         1         4
+#          \       /
+#            2 - 3
+# * - means this atom is unsaturated and thus not chiral
+    Sch_ID: 18
+    name: steroid_framework_8_10_13_unsaturated_9
+#   pattern: 1              2            3            4               5             6            7           8      9       10        11            12           13      14             15 16           17
+    pattern: [C;-0;X4,X3]1~[C;-0;X4,X3]~[C;-0;X4,X3]~[C;-0;R1;X4,X3]~[C;-0;X4,X3]2~[C;-0;X4,X3]~[C;-0;X4,X3][C-0X4]3[C-0X3]([C-0X4]12)=[C-0X3]~[C;-0;X4,X3][C-0X4]1[C;-0;X4,X3]3~[C;-0;X4,X3]~[C;-0;X4,X3]~[C;-0;X4,X3]1
+    geoms:    8  1  10  -1    13  -1
+    reflect: 0
+    retain_orig: 1
+    class: 2
+# ring attachments forbidden at atom #4
+}
+
+chiral_pattern{
+#       16
+#     /   \
+#   17     15
+#    \     /
+#    13 - 14
+#   /       \
+#  12       *8 - 7
+#   \       /      \
+#    11 - 9         6
+#          \       /
+#           10 - 5
+#          /       \
+#         1         4
+#          \       /
+#            2 - 3
+# * - means this atom is unsaturated and thus not chiral
+    Sch_ID: 19
+    name: steroid_framework_9_10_13_unsaturated_8
+#   pattern: 1              2            3            4               5             6            7       8      9       10        11            12           13      14             15         16           17
+    pattern: [C;-0;X4,X3]1~[C;-0;X4,X3]~[C;-0;X4,X3]~[C;-0;R1;X4,X3]~[C;-0;X4,X3]2~[C;-0;X4,X3]~[C-0X3]=[C-0X3]3[C-0X4]([C-0X4]12)[C;-0;X4,X3]~[C;-0;X4,X3][C-0X4]1[C;-0;X4,X3]3~[C;-0;X4,X3]~[C;-0;X4,X3]~[C;-0;X4,X3]1
+    geoms:    9 -1    10  -1    13  -1 
+# ring attachments forbidden at atom #4
+    reflect: 0
+    retain_orig: 1
+    class: 2
+}
+
+chiral_pattern{
+#       16
+#     /   \
+#   17     15
+#    \     /
+#    13*- 14
+#   /       \
+#  12        8 - 7
+#   \       /      \
+#    11 - 9         6
+#          \       /
+#           10 - 5
+#          /       \
+#         1         4
+#          \       /
+#            2 - 3
+# * - means this atom is unsaturated and thus not chiral
+    Sch_ID: 20
+    name: steroid_framework_8_9_10_unsaturated_13
+#   pattern: 1              2            3            4               5             6            7           8      9       10        11            12           13      14             15         16           17
+    pattern: [C;-0;X4,X3]1~[C;-0;X4,X3]~[C;-0;X4,X3]~[C;-0;R1;X4,X3]~[C;-0;X4,X3]2~[C;-0;X4,X3]~[C;-0;X4,X3][C-0X4]3[C-0X4]([C-0X4]12)[C;-0;X4,X3]~[C;-0;X4,X3]~[C-0X3]~1~[C;-0;X4,X3]3~[C;-0;X4,X3]~[C;-0;X4,X3]~[C;-0;X4,X3]~1
+    geoms:    8  1  9 -1  10  -1
+# ring attachments forbidden at atom #4
+    reflect: 0
+    retain_orig: 1
+    class: 2
+}
+
+
+chiral_pattern{
+#       16
+#     /   \
+#   17     15
+#    \     /
+#    13 - 14
+#   /       \
+#  12        8 - 7
+#   \       /      \
+#    11 - 9*        6
+#          \       /
+#           10*- 5
+#          /       \
+#         1         4
+#          \       /
+#            2 - 3
+# * - means this atom is unsaturated and thus not chiral
+    Sch_ID: 21
+    name: steroid_framework_8_13_unsaturated_9_10
+#   pattern:  1               2             3             4                5             6            7           8       9        10          11            12           13      14             15         16           17
+    pattern: [#6;-0;X4,X3]1~[#6;-0;X4,X3]~[#6;-0;X4,X3]~[#6;-0;R1;X4,X3]~[#6;-0;X4,X3]2~[C;-0;X4,X3]~[C;-0;X4,X3][C-0X4]3[C-0X3](~[#6-0X3]12)~[C;-0;X4,X3]~[C;-0;X4,X3][C-0X4]1[C;-0;X4,X3]3~[C;-0;X4,X3]~[C;-0;X4,X3]~[C;-0;X4,X3]1
+    geoms:    8  1  13  -1 
+# ring attachments forbidden at atom #4
+    reflect: 0
+    retain_orig: 1
+    class: 2
+}
+
+chiral_pattern{
+#       16
+#     /   \
+#   17     15
+#    \     /
+#    13 - 14
+#   /       \
+#  12        8 - 7
+#   \       /      \
+#    11 - 9         6
+#          \       /
+#           10 - 5
+#          /       \
+#         1         4
+#          \       /
+#            2 - 3
+# * - means this atom is unsaturated and thus not chiral
+    Sch_ID: 22
+    name: steroid_framework_9_13_unsaturated_8_10
+#   pattern:  1                2            3             4                 5              6            7            8        9       10        11             12           13      14             15         16           17
+    pattern: [#6;-0;X4,X3]~1~[#6;-0;X4,X3]~[#6;-0;X4,X3]~[#6;-0;R1;X4,X3]~[#6;-0;X4,X3]~2~[C;-0;X4,X3]~[C;-0;X4,X3]~[C-0X3]~3[C-0X4]([#6-0X3]~1~2)[C;-0;X4,X3]~[C;-0;X4,X3][C-0X4]1[C;-0;X4,X3]~3~[C;-0;X4,X3]~[C;-0;X4,X3]~[C;-0;X4,X3]1
+    geoms:    9 -1    13  -1 
+# ring attachments forbidden at atom #4
+    reflect: 0
+    retain_orig: 1
+    class: 2
+}
+
+chiral_pattern{
+#       16
+#     /   \
+#   17     15
+#    \     /
+#   *13 - 14
+#   /       \
+#  12        8 - 7
+#   \       /      \
+#    11 - 9         6
+#          \       /
+#          *10 - 5
+#          /       \
+#         1         4
+#          \       /
+#            2 - 3
+# * - means this atom is unsaturated and thus not chiral
+    Sch_ID: 23
+    name: steroid_framework_8_9_unsaturated_10_13
+#   pattern:   1              2             3             4                5               6            7           8       9        10          11            12           13      14             15         16           17
+    pattern: [#6;-0;X4,X3]~1~[#6;-0;X4,X3]~[#6;-0;X4,X3]~[#6;-0;R1;X4,X3]~[#6;-0;X4,X3]~2~[C;-0;X4,X3]~[C;-0;X4,X3][C-0X4]3[C-0X4]([#6-0X3]~1~2)[C;-0;X4,X3]~[C;-0;X4,X3]~[C-0X3]~1~[C;-0;X4,X3]3~[C;-0;X4,X3]~[C;-0;X4,X3]~[C;-0;X4,X3]~1
+    geoms:    8  1  9 -1
+# ring attachments forbidden at atom #4
+    reflect: 0
+    retain_orig: 1
+    class: 2
+}
+
+chiral_pattern{
+#       16
+#     /   \
+#   17     15
+#    \     /
+#    13 - 14
+#   /       \
+#  12       *8 - 7
+#   \       /      \
+#    11 - 9*        6
+#          \       /
+#           10 - 5
+#          /       \
+#         1         4
+#          \       /
+#            2 - 3
+# * - means this atom is unsaturated and thus not chiral
+    Sch_ID: 24
+    name: steroid_framework_10_13_unsaturated_8_9
+#   pattern: 1              2            3            4               5             6            7            8         9        10         11           12           13      14             15         16           17
+    pattern: [C;-0;X4,X3]1~[C;-0;X4,X3]~[C;-0;X4,X3]~[C;-0;R1;X4,X3]~[C;-0;X4,X3]2~[C;-0;X4,X3]~[C;-0;X4,X3]~[C-0X3]~3~[C-0X3](~[C-0X4]12)~[C;-0;X4,X3]~[C;-0;X4,X3][C-0X4]1[C;-0;X4,X3]~3~[C;-0;X4,X3]~[C;-0;X4,X3]~[C;-0;X4,X3]1
+    geoms:    10  -1    13  -1 
+# ring attachments forbidden at atom #4
+    reflect: 0
+    retain_orig: 1
+    class: 2
+}
+
+chiral_pattern{
+#       16
+#     /   \
+#   17     15
+#    \     /
+#   *13 - 14
+#   /       \
+#  12        8 - 7
+#   \       /      \
+#    11 - 9*        6
+#          \       /
+#           10 - 5
+#          /       \
+#         1         4
+#          \       /
+#            2 - 3
+# * - means this atom is unsaturated and thus not chiral
+    Sch_ID: 25
+    name: steroid_framework_8_10_unsaturated_9_13
+#   pattern: 1              2            3            4               5             6            7           8        9        10         11           12          13      14             15         16           17
+    pattern: [C;-0;X4,X3]1~[C;-0;X4,X3]~[C;-0;X4,X3]~[C;-0;R1;X4,X3]~[C;-0;X4,X3]2~[C;-0;X4,X3]~[C;-0;X4,X3][C-0X4]3~[C-0X3](~[C-0X4]12)~[C;-0;X4,X3]~[C;-0;X4,X3]~[C-0X3]~1~[C;-0;X4,X3]3~[C;-0;X4,X3]~[C;-0;X4,X3]~[C;-0;X4,X3]1
+    geoms: 8 1 10 -1
+# ring attachments forbidden at atom #4
+    reflect: 0
+    retain_orig: 1
+    class: 2
+}
+
+chiral_pattern{
+#       16
+#     /   \
+#   17     15
+#    \     /
+#    13 - 14
+#   /       \
+#  12       *8 - 7
+#   \       /      \
+#    11 - 9*        6
+#          \       /
+#          *10 - 5
+#          /       \
+#         1         4
+#          \       /
+#            2 - 3
+# * - means this atom is unsaturated and thus not chiral
+    Sch_ID: 26
+    name: steroid_framework_13_unsaturated_8_9_10
+#   pattern:   1              2             3              4               5               6             7             8         9         10           11            12           13      14             15          16           17
+    pattern: [#6;-0;X4,X3]~1~[#6;-0;X4,X3]~[#6;-0;X4,X3]~[#6;-0;R1;X4,X3]~[#6;-0;X4,X3]~2~[#6;-0;X4,X3]~[#6;-0;X4,X3]~[#6-0X3]3~[#6-0X3](~[#6-0X3]~1~2)~[C;-0;X4,X3]~[C;-0;X4,X3][C-0X4]1~[C;-0;X4,X3]3~[C;-0;X4,X3]~[C;-0;X4,X3]~[C;-0;X4,X3]1
+    geoms:    13  -1 
+# ring attachments forbidden at atom #4
+    reflect: 0
+    retain_orig: 1
+    class: 2
+}
+
+chiral_pattern{
+#       16
+#     /   \
+#   17     15
+#    \     /
+#    13*- 14
+#   /       \
+#  12        8 - 7
+#   \       /      \
+#    11 - 9*        6
+#          \       /
+#           10*- 5
+#          /       \
+#         1         4
+#          \       /
+#            2 - 3
+# * - means this atom is unsaturated and thus not chiral
+    Sch_ID: 27
+    name: steroid_framework_8_unsaturated_9_10_13
+#   pattern:   1              2             3             4                5               6            7           8        9        10            11           12          13      14             15         16           17
+    pattern: [#6;-0;X4,X3]~1~[#6;-0;X4,X3]~[#6;-0;X4,X3]~[#6;-0;R1;X4,X3]~[#6;-0;X4,X3]~2~[C;-0;X4,X3]~[C;-0;X4,X3][C-0X4]3~[C-0X3](~[#6-0X3]~1~2)~[C;-0;X4,X3]~[C;-0;X4,X3]~[C-0X3]~1~[C;-0;X4,X3]3~[C;-0;X4,X3]~[C;-0;X4,X3]~[C;-0;X4,X3]~1
+    geoms:    8  1
+# ring attachments forbidden at atom #4
+    reflect: 0
+    retain_orig: 1
+    class: 2
+}
+
+chiral_pattern{
+#       16
+#     /   \
+#   17     15
+#    \     /
+#    13*- 14
+#   /       \
+#  12        8*- 7
+#   \       /      \
+#    11 - 9         6
+#          \       /
+#           10*- 5
+#          /       \
+#         1         4
+#          \       /
+#            2 - 3
+# * - means this atom is unsaturated and thus not chiral
+    Sch_ID: 28
+    name: steroid_framework_9_unsaturated_8_10_13
+#   pattern:   1              2             3             4                5               6            7            8         9        10           11            12         13       14             15         16           17
+    pattern: [#6;-0;X4,X3]~1~[#6;-0;X4,X3]~[#6;-0;X4,X3]~[#6;-0;R1;X4,X3]~[#6;-0;X4,X3]~2~[C;-0;X4,X3]~[C;-0;X4,X3]~[C-0X3]~3~[C-0X4](~[#6-0X3]~1~2)[C;-0;X4,X3]~[C;-0;X4,X3]~[C-0X3]~1~[C;-0;X4,X3]~3~[C;-0;X4,X3]~[C;-0;X4,X3]~[C;-0;X4,X3]~1
+    geoms:    9 -1
+# ring attachments forbidden at atom #4
+    reflect: 0
+    retain_orig: 1
+    class: 2
+}
+
+chiral_pattern{
+#       16
+#     /   \
+#   17     15
+#    \     /
+#    13*- 14
+#   /       \
+#  12        8*- 7
+#   \       /      \
+#    11 - 9*        6
+#          \       /
+#           10 - 5
+#          /       \
+#         1         4
+#          \       /
+#            2 - 3
+# * - means this atom is unsaturated and thus not chiral
+    Sch_ID: 29
+    name: steroid_framework_10_unsaturated_8_9_13
+#   pattern:  1              2            3            4               5             6            7            8        9       10          11            12           13       14             15           16           17
+    pattern: [C;-0;X4,X3]1~[C;-0;X4,X3]~[C;-0;X4,X3]~[C;-0;R1;X4,X3]~[C;-0;X4,X3]2~[C;-0;X4,X3]~[C;-0;X4,X3]~[C-0X3]~3~[C-0X3](~[C-0X4]12)~[C;-0;X4,X3]~[C;-0;X4,X3]~[C-0X3]~1~[C;-0;X4,X3]~3~[C;-0;X4,X3]~[C;-0;X4,X3]~[C;-0;X4,X3]~1
+    geoms:    10  -1
+# ring attachments forbidden at atom #4
+    reflect: 0
+    retain_orig: 1
+    class: 2
+}
+
+chiral_pattern{
+# restrict fused 5 membered rings to cis geometries for class 1
+    Sch_ID: 30
+    name: fused_5-5_membered_rings
+    pattern: [*]~1~[*]~[C-0X4]-2~[*]~[*]~[*]~[C-0X4]-2[*]~1
+    geoms:    3 1    7 1
+    reflect: 1
+    class: 1
+}
+
+chiral_pattern{
+# 
+#     1 - 2
+#   /       \
+#  7    5    3
+#   \  / \  /
+#     6 - 4
+# 
+    Sch_ID: 31
+    name: cyclopropacyclohexane
+    pattern: [#6-0,#7-0,#7+1,#8-0,#16-0]~1[#6-0,#7-0,#7+1,#8-0,#16-0]~[#6-0,#7-0,#7+1,#8-0,#16-0]~[C-0X4]2[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4]2[#6-0,#7-0,#7+1,#8-0,#16-0]~1
+    geoms:    4 1    6 1
+    class: 1
+    reflect: 1
+    retain_orig: 1
+}
+
+chiral_pattern{
+#
+#       2
+#      / \
+#     1   3
+#   /       \
+#  8    6    4
+#   \  / \  /
+#     7 - 5
+#
+    Sch_ID: 32
+    name: cyclopropacycloheptane
+    pattern: [#6-0,#7-0,#7+1,#8-0,#16-0]~1[#6-0,#7-0,#7+1,#8-0,#16-0]~[#6-0,#7-0,#7+1,#8-0,#16-0]~[#6-0,#7-0,#7+1,#8-0,#16-0]~[C-0X4]2[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4]2[#6-0,#7-0,#7+1,#8-0,#16-0]~1
+    geoms:    5 1    7 1
+    class: 1
+    reflect: 1
+    retain_orig: 1
+}
+
+chiral_pattern{
+#
+#     1 - 2
+#   /       \
+#  9         3
+#  |         |
+#  8    6    4
+#   \  / \  /
+#     7 - 5
+#
+    Sch_ID: 32
+    name: cyclopropacyclooctane
+    pattern: [#6-0,#7-0,#7+1,#8-0,#16-0]~1[#6-0,#7-0,#7+1,#8-0,#16-0]~[#6-0,#7-0,#7+1,#8-0,#16-0]~[#6-0,#7-0,#7+1,#8-0,#16-0]~[#6-0,#7-0,#7+1,#8-0,#16-0]~[C-0X4]2[#6-0,#7-0,#7+1,#8-0,#16-0][C-0X4]2[#6-0,#7-0,#7+1,#8-0,#16-0]~1
+    geoms:    6 1    8 1
+    class: 1
+    reflect: 1
+    retain_orig: 1
+}
+

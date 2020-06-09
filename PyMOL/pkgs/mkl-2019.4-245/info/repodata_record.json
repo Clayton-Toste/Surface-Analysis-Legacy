@@ -1,0 +1,21 @@
+{
+  "build": "245",
+  "build_number": 245,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "intel-openmp"
+  ],
+  "features": "",
+  "fn": "mkl-2019.4-245.tar.bz2",
+  "license": "proprietary - Intel",
+  "license_family": "Proprietary",
+  "md5": "0f897fde2379b1adf2f6df4e79f22276",
+  "name": "mkl",
+  "size": 165198238,
+  "subdir": "win-64",
+  "timestamp": 1559526898851,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/mkl-2019.4-245.tar.bz2",
+  "version": "2019.4"
+}

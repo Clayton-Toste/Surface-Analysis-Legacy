@@ -1,0 +1,23 @@
+{
+  "arch": null,
+  "build": "py_1",
+  "build_number": 1,
+  "depends": [
+    "python"
+  ],
+  "files": [
+    "site-packages/web/__init__.py",
+    "site-packages/web/pymolhttpd.py"
+  ],
+  "installed_by": "PyMOL-2.3.2-Windows-x86_64.exe",
+  "license": "proprietary - Schrodinger",
+  "license_family": "Proprietary",
+  "link": null,
+  "md5": "b73e3cd531bd91866f1297788a8665f1",
+  "name": "pymol-web-legacy",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "url": "https://conda.anaconda.org/schrodinger/noarch/pymol-web-legacy-2.0-py_1.tar.bz2",
+  "version": "2.0"
+}

@@ -1,0 +1,30 @@
+OPTIONS nosort
+#
+# change in valence has to be assigned by the product
+#
+  redo   fo  pattern                                               comment
+   int  int  char                                                  char
+#
+    0    0	 [#7;X3;+]-[#6;X3]-[#7;X3]>>[#7;X3;+0;v3]-[#6;X3]-[#7;X3]    # C in amidine
+    0    0	 [#6;X3]-[#7;X3]-[#8;X1]>>[#6;X3;v4]=[#7;X3;+]-[#8;X1;-;v2]  # N in pyridine-N-oxide
+    0    0	 [#6X3]-[#7X2]=[CX3](-[NX3;H0])-[NX3;H1,H2]>>[#6;X3;v4]=[#7X2]-[CX3](=[NX3+])-[NX3]  # guanidium
+    0    0	 [#6X3]-[#7X2]=[CX3](-[NX3;H1])-[NX3;H2]>>[#6;X3;v4]=[#7X2]-[CX3](=[NX3+])-[NX3]  # guanidium
+    0    0	 [#6X3]-[#7X2]=[CX3](-[NX3])-[NX3]>>[#6;X3;v4]=[#7X2]-[CX3](=[NX3+])-[NX3]  # guanidium
+    1    0	 [#6X3]-[#7;X3+]=[CX3]>>[#6;X3;v3]-[#7;X3;+0;v3]-[CX3;v3]    # N which should not contain a formal charge 
+    0    0	 [#6X3]-[CX3]=[#7X3;+]>>[#6;X3;v4]=[CX3]-[#7X3;+0]               # 
+    0    0	 [#6X3]-[CX3]=[CX3]-[CX3]=[#7X3;+]>>[#6;X3;v4]=[#6X3]-[CX3]=[CX3]-[#7X3;+0]                          # 
+    0    0	 [#6X3]-[CX3]=[CX3]-[CX3]=[CX3]-[CX3]=[#7X3;+]>>[#6;X3;v4]=[CX3]-[CX3]=[CX3]-[CX3]=[CX3]-[#7X3;+0]   # 
+    0    0	 [#7;X3;+]>>[#7;X3+0;v3]                               # N which should not contain a formal charge 
+    0    0	 [#6;X3]-[#7;X3]>>[#6;X3;v4]=[#7;X3;+]                 # 
+    1    0	 [#8;X1][#6X3]=[#6X3][#6X3]=[#6X3][#7X3+]=[#6X3]>>[#8X1;v2]=[#6X3]-[#6X3]=[#6X3]-[#6X3;v3][#7;X3;+0;v3][#6X3;v3] # not an O-
+    1    0	 [#8;X1][#6X3]=[#6X3][#6X3]=[#7X3+]>>[#8X1;v2]=[#6X3][#6X3]=[#6X3][#7;X3;+0;v3] # not an O-
+    0    0	 [#8;X1]-[*]>>[#8;X1;-;v2]-[*]                                   # O-
+    0    0	 [#16;X1]-[*]>>[#16;X1;-;v2]-[*]                                 # S-
+    0    0	 [#7X2]([#1,#6])[#7X2]=[#7X2]>>[#7X2]([#1,#6])=[#7X2+]=[#7X2]    # protonated/alkylated azide 
+    1    0	 [#7X2]-[CX3]=[CX3]-[NX3+]=[CX3]>>[#7X2;v3]=[CX3]-[CX3;v3]-[NX3;+0;v3]-[CX3;v3] # N which should not contain a formal charge 
+    0    0	 [#7X2]-[CX3]=[NX3+]>>[#7X2;v3]=[CX3]-[NX3;+0;v3]      # N which should not contain a formal charge 
+    1    0	 [#7X2]-[#7X3+]=[#6X3]>>[#7X2;v2]-[#7X3;+0]-[#6X3;v3]  # N which should not contain a formal charge 
+    0    0	 [#7;X2]>>[#7;X2;-;v3]                                 # [NX2-]
+    1    0	 [#6;X3]-[SX4](=[OX1])(=[OX1])-[#7X2-]>>[#6;X3]-[SX4](=[OX1])(=[OX1])-[#7X2-0;v2]  #
+    0    0   [#16;X3](-[*])(-[*])-[*]>>[#16;X3;+;v2](-[*])(-[*])-[*]      # protonated/alkylated cys
+    0    0   [#6X3]-[#6X2]#[#7X1]>>[#6X3;-;v4]-[#6X2]#[#7X1]            # acetonitrile anion

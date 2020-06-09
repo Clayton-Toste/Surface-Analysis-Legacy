@@ -1,0 +1,33 @@
+{
+    "menu_name": "PyMOL (Anaconda${PY_VER} ${PLATFORM})",
+    "menu_items":
+    [
+    {
+        "name": "PyMOL",
+        "system": "${PREFIX}/PyMOLWin.exe",
+        "icon": "${MENU_DIR}/pymol2.ico",
+        "workdir": "${PERSONALDIR}"
+    },
+    {
+        "name": "PyMOL + Console",
+        "system": "${PREFIX}/PyMOLWin.exe",
+        "scriptarguments": ["+2"],
+        "icon": "${MENU_DIR}/pymol2.ico",
+        "workdir": "${PERSONALDIR}"
+    },
+    {
+        "name": "PyMOL Stereo 3D Quad-buffer",
+        "system": "${PREFIX}/PyMOLWin.exe",
+        "scriptarguments": ["-S"],
+        "icon": "${MENU_DIR}/pymol2.ico",
+        "workdir": "${PERSONALDIR}"
+    },
+    {
+        "name": "PyMOL Stereo 3D Zalman",
+        "system": "${PREFIX}/PyMOLWin.exe",
+        "scriptarguments": ["-St", "6"],
+        "icon": "${MENU_DIR}/pymol2.ico",
+        "workdir": "${PERSONALDIR}"
+    }
+    ]
+}

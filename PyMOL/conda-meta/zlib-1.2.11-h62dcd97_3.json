@@ -1,0 +1,30 @@
+{
+  "arch": "x86_64",
+  "build": "h62dcd97_3",
+  "build_number": 3,
+  "depends": [
+    "vc >=14.1,<15.0a0"
+  ],
+  "files": [
+    "Library/bin/zlib.dll",
+    "Library/include/zconf.h",
+    "Library/include/zlib.h",
+    "Library/lib/z.lib",
+    "Library/lib/zdll.lib",
+    "Library/lib/zlib.lib",
+    "Library/lib/zlibstatic.lib",
+    "Library/share/man/man3/zlib.3",
+    "Library/share/pkgconfig/zlib.pc"
+  ],
+  "installed_by": "PyMOL-2.3.2-Windows-x86_64.exe",
+  "license": "zlib",
+  "license_family": "Other",
+  "link": null,
+  "md5": "6f96fd91475cc78aabf76d2e1a9ed91f",
+  "name": "zlib",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1542815182812,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/zlib-1.2.11-h62dcd97_3.tar.bz2",
+  "version": "1.2.11"
+}

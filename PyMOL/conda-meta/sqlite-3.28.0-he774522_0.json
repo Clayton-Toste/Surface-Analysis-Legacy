@@ -1,0 +1,24 @@
+{
+  "arch": "x86_64",
+  "build": "he774522_0",
+  "build_number": 0,
+  "depends": [
+    "vc >=14.1,<15.0a0"
+  ],
+  "files": [
+    "Library/bin/sqlite3.dll",
+    "Library/bin/sqlite3.exe",
+    "Library/include/sqlite3.h",
+    "Library/lib/sqlite3.lib"
+  ],
+  "installed_by": "PyMOL-2.3.2-Windows-x86_64.exe",
+  "license": "Public-Domain (http://www.sqlite.org/copyright.html)",
+  "link": null,
+  "md5": "08bd6dc305316bf448e33004421313af",
+  "name": "sqlite",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1555958035588,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/sqlite-3.28.0-he774522_0.tar.bz2",
+  "version": "3.28.0"
+}

@@ -1,0 +1,19 @@
+{
+  "arch": "x86_64",
+  "build": "1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/schrodinger/win-64",
+  "constrains": [],
+  "depends": [],
+  "features": "",
+  "fn": "mtz2ccp4_px-1.0-1.tar.bz2",
+  "license": "Schrodinger Proprietary",
+  "md5": "a4383b328d1c53a7ac7cab4305bb2e70",
+  "name": "mtz2ccp4_px",
+  "platform": "win32",
+  "size": 830680,
+  "subdir": "win-64",
+  "track_features": "",
+  "url": "https://conda.anaconda.org/schrodinger/win-64/mtz2ccp4_px-1.0-1.tar.bz2",
+  "version": "1.0"
+}

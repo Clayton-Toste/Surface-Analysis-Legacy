@@ -1,0 +1,25 @@
+{
+  "arch": "x86_64",
+  "build": "py37_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/schrodinger/win-64",
+  "constrains": [],
+  "depends": [
+    "apbs",
+    "mengine",
+    "mpeg_encode",
+    "pdb2pqr",
+    "python >=3.7,<3.8.0a0"
+  ],
+  "features": "",
+  "fn": "freemol-1.158-py37_1.tar.bz2",
+  "md5": "1ee42a40adc98d49925c595982f440e9",
+  "name": "freemol",
+  "platform": "win32",
+  "size": 10180,
+  "subdir": "win-64",
+  "timestamp": 1533119750775,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/schrodinger/win-64/freemol-1.158-py37_1.tar.bz2",
+  "version": "1.158"
+}
