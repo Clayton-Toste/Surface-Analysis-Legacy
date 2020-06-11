@@ -24,7 +24,23 @@ name_dict = {
     '1yph': r'$ \alpha $'+'-CT'
 }
 
+# Main fucntion that process data and plots.
 def Graph(proteins: Set[str], options: Set[str], logger, start: int) -> None:
+    '''
+    data
+    {
+        proteins:
+        {
+            types of data(ex. "sizes_outer"):
+            {
+                classification(s):
+                [
+                    sizes or distances
+                ]
+            }
+        }
+    }
+    '''
     data = {
     protein:{
     'sizes_outer': {},

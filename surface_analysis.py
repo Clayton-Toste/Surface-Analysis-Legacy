@@ -7,8 +7,14 @@ from csv import writer
 from functools import partial
 import re
 
+'''
+Subclass of list used for performing Dijkstra's algorithm.
+Acts as an list of tuples with the first object being the object stored and the second being an number used for sorting.
+Cannot contain duplicate objects, but does allow dupicate values.
+'''
+
 class sortedset(list):
-  def append(self, other, other_value):
+  def append(self, other, other_value: int):
     done = False
     for i, (obj, value) in enumerate(self):
       if not done and other_value < value:
@@ -27,38 +33,38 @@ class Vertex:
         self.x = loc[0]
         self.y = loc[1]
         self.z = loc[2]
-        self.number = 0
-        self.area = 0
+        self.number = 0 # Used for indexing.
+        self.area = 0 # Vertex area is trice the acual area but is divided later.
         self.classification = Classification_From_Color(color)
         self.touching = set()
         self.patch = None
-        self.center = False
-        self.highest = False
+        self.center = False # True if center of patch.
+        self.highest = False # True if highest Vertex, used for calculating outer patch.
 
-    def reintialize(self, identifier: int):
-        self.ids.append(identfier)
-        return self
-
+    # Caculates direct distance to other vertex using Pythagoras theorem.
     def distance_to(self, other) -> float:
         return ((self.x-other.x)**2 + (self.y-other.y)**2 + (self.z-other.z)**2)**.5
-
-    def __str__(self) -> str:
-        return str(self.x) + str(self.y) + str(self.z) + str(self.classification)
 
 
 class Patch:
     def __init__(self, vertex: Vertex, rim: bool):
         self.classification = vertex.classification
-        self.distances = []
+        self.distances = [] # Two-dimention list for keeping ditances between vertice in rim to other vertices
         self.vertices = {vertex,}
-        self.rim = set()
+        # Rim is any vertex that touches an different patch and core any vertex that is not part of the rim
+        self.rim = set() 
         self.core = set()
         (self.rim if rim else self.core).add(vertex)
-        self.touching = set()
+        self.touching = set() # Patches that are touching self used for building surfaces
         self.surface = None
         self.center = None
-        self.highest = False
+        self.highest = False # True if contains highest Vertex, used for calculating outer patch.
 
+
+    '''
+    Run after all patches have been built.
+    Assaigns numbers to vertices and prepares distance two-dimention list
+    '''
     def finish(self):
         i = 0
         for vertex in self.rim:
@@ -74,15 +80,22 @@ class Patch:
     def is_touching_patch(self, other) -> bool:
         return any(any(touching in other.rim for touching in vertex.touching) for vertex in self.rim)
 
+
+    # Looks up distance between two patches.
     def distance_to(self, other) -> float:
         return distances_dict[frozenset((self.center, other.center))]
 
+    # Merges all compoents of another patch into self.
     def add_patch(self, patch):
         if patch.highest: self.highest = True
         self.vertices |= patch.vertices
         self.rim |= patch.rim
         self.core |= patch.core
     
+    '''
+    Caculates the center of the patch.
+    the center is defined as the vertex with the lowest absolute mean deviation of distances from the rim
+    '''
     def get_center(self) -> Vertex:
         if not self.center and self.rim:
                 best = (None, float("inf"))
@@ -101,8 +114,6 @@ class Patch:
                         raise e
                 self.center = best[0]
                 self.center.center = True
-            
-
 
     def area(self) -> float:
         return sum(vertex.area for vertex in self.vertices)/3
@@ -114,7 +125,7 @@ RBG_dict = {
 (0.0, 0.0, 1.0): 'Hydrophobic'
 }
 
-
+# Calculates distances and area around touching vertices.
 def Make_Face(distances_dict: dict, vertex1: Vertex, vertex2: Vertex, vertex3: Vertex):
     vertex1.touching.add(vertex2)
     vertex2.touching.add(vertex1)
@@ -134,7 +145,7 @@ def Make_Face(distances_dict: dict, vertex1: Vertex, vertex2: Vertex, vertex3: V
     vertex2.area += area 
     vertex3.area += area 
 
-
+# Translates color of model to an classification
 def Classification_From_Color(color: Tuple[float]) -> str:
     if color in RBG_dict:
         return RBG_dict[color]
@@ -148,6 +159,8 @@ def Classification_From_Color(color: Tuple[float]) -> str:
             best = [score, key]
     return RBG_dict[best[1]]
 
+
+# Reads information for vertices and faces from wrl file
 def Read_Wrl(distances_dict: dict, file: str) -> Set[Vertex]:
     try:
         with open(file, 'r') as wrl:
@@ -196,9 +209,13 @@ def Read_Wrl(distances_dict: dict, file: str) -> Set[Vertex]:
     except Exception:
         raise 
 
-
+# Builds vertices into patchs
 def Get_Patches(vertices: Set[Vertex]) -> Tuple[Set[Patch], int]:
     patches = set()
+    # For every vertex
+    #   Check if there are any preexisting patches it is touching and has the same classifcaition as.
+    #   Create an new patch for the vertex.
+    #   Conglomerate the touching patches into the new patch.
     for vertex in vertices:
         patchable = set()
         rim = False
@@ -226,7 +243,9 @@ def Get_Patches(vertices: Set[Vertex]) -> Tuple[Set[Patch], int]:
         checked.add(patch)
     return checked, d
 
+# Find distances between every vertex on the rim of an patch to all other vertices in the patch, used for finging center 
 def Build_Patch_Distances(distances_dict: dict, patches: Set[Patch]) -> None:
+        # For every vertex in every rim run Dijkstra's algorithm confined to the vertices of the patch. 
         for patch in patches:
             distances = patch.distances
             for rim in patch.rim:
@@ -248,10 +267,18 @@ def Build_Patch_Distances(distances_dict: dict, patches: Set[Patch]) -> None:
                             continue
                         touching.append(other, value + distances_dict[frozenset((vertex, other))])
 
+'''
+Collect patches into surfaces.
+An surface is defined as an continues collection patches.
+Outer is the surface on the outside and inners are the surfaces of  bubbles on the inside.
+'''
 def Build_Surfaces(patches: Set[Patch]) -> Tuple[Set[FrozenSet[Patch]], FrozenSet[Patch]]:
     unassagined = patches.copy()
     inner = set()
     outer = None
+    # While there are patches with surfaces:
+    #   Choose an patch to create an surface for.
+    #   Keep adding touching patches to the surface until are no touching patches.
     while unassagined:
         patch = unassagined.pop()
         surface = {patch}
@@ -261,23 +288,29 @@ def Build_Surfaces(patches: Set[Patch]) -> Tuple[Set[FrozenSet[Patch]], FrozenSe
             patch = touching.pop()
             surface.add(patch)
             unassagined.remove(patch)
-            touching |= patch.touching & unassagined
             if patch.highest: highest = True
         if highest:
+            # The surface with the highest vertex is the outer surface because it would be impossible for an inner surface to have a vertex above the highest point of the outside.
             outer = frozenset(surface)
         else:
             inner.add(frozenset(surface))
     for surface in inner:
         for patch in surface:
             patch.surface = surface
-    for patch in outer:
+    for patch in outer
         patch.surface = outer
     return inner, outer
 
+# See patch.get_center
 def Get_Centers(patches: Set[Patch]) -> None:
     for patch in patches:
         patch.get_center()
 
+'''
+Finds distances from centers of different patchs.
+Runs Dijkstra's algorithm on every patch center until it hits all other patch's centers.
+Most time consuming part of the program.
+'''
 def Build_Distances_Dict(distances_dict: dict, patches: Set[Patch]) -> Set[FrozenSet]:
     unchecked = patches.copy()
     patch = unchecked.pop()
@@ -315,6 +348,8 @@ def Build_Distances_Dict(distances_dict: dict, patches: Set[Patch]) -> Set[Froze
                 continue
             break
 
+
+# Main function of the script, runs other functions as well as writing the files.
 def Surface_Analysis(protein: str, logger, start) -> None:
     file = protein+"/"+protein+'.wrl'
     distances_dict = dict()
@@ -339,6 +374,8 @@ def Surface_Analysis(protein: str, logger, start) -> None:
     end = time()
     logger.debug('Distances between patches calculated.', extra={'offset': timedelta(seconds=end-start), 'code': protein})
     try:
+        
+        # Prepare files for writing
         sizes_outer_file = open(protein+'/sizes_outer_'+protein+'.csv'.format(protein), 'w', newline='')
         sizes_outer_writer = writer(sizes_outer_file)
         sizes_outer_writer.writerow(['Classification', 'Size(\u212B\u00B2)'])
@@ -357,6 +394,8 @@ def Surface_Analysis(protein: str, logger, start) -> None:
         touching_inner_file = open(protein+'/touching_inner_'+protein+'.csv', 'w', newline='')
         touching_inner_writer = writer(touching_inner_file)
         touching_inner_writer.writerow(['First Classification', 'Second Classification', 'Distance(\u212B)', 'Surface'])
+
+        # Write to files
         for i, surface in enumerate(inners):
             checked = set()
             for first in surface:
@@ -377,18 +416,26 @@ def Surface_Analysis(protein: str, logger, start) -> None:
                     continue
                 if second.classification == first.classification:
                     distances_outer_writer.writerow([first.classification, distances_dict[frozenset((first.center, second.center))]])
+                    continue
                 if first.is_touching_patch(second): 
                     touching_outer_writer.writerow([first.classification, second.classification, distances_dict[frozenset((first.center, second.center))]])
+                    continue
             checked.add(first)
         open(protein+'/.finished', 'w')
+    
+
     except Exception as e:
         raise e
     finally:
+
+        # Clean up
         sizes_outer_file.close()
         sizes_inner_file.close()
         distances_outer_file.close()
         distances_inner_file.close()
         touching_outer_file.close() 
-        touching_inner_file.close()   
+        touching_inner_file.close()
+
+
     end = time()
     logger.info('Finished analizing protein.', extra={'offset': timedelta(seconds=end-start), 'code': protein})
